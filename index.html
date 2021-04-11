@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>HeimV Heimverwaltungssoftware</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet" />
     <style>
@@ -15,18 +15,11 @@
         --color-dark: #59599e;
         --color-dark-gray: #464652;
         --color-black: #2e2e52;
+        --background-circle: radial-gradient(106.71% 106.71% at 50% -6.71%, rgba(186, 186, 217, 0) 0%, #babad9 60%);
       }
 
       html,
-      body,
-      p,
-      hr,
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
+      body {
         margin: 0;
         padding: 0;
       }
@@ -37,9 +30,11 @@
       h5,
       h6 {
         font-family: "Patua One", bold;
+        text-shadow: 0 0 0.5em rgba(0, 0, 0, 0.15);
       }
       html {
         box-sizing: border-box;
+        font-size: 1.5em;
       }
       *,
       *::before,
@@ -58,19 +53,29 @@
         border-collapse: collapse;
         border-spacing: 0;
       }
-      td,
-      th {
-        padding: 0;
+      p {
+        line-height: 2em;
+      }
+      a,
+      a:visited {
+        color: var(--color-black);
+      }
+      a:hover,
+      a:active,
+      a:focus {
+        color: var(--color-dark);
       }
 
       body {
         background-color: var(--color-white);
+        font-family: Roboto, Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif;
       }
 
       .container {
         display: flex;
-        justify-content: center;
+        align-items: center;
         padding: 1rem;
+        flex-direction: column;
       }
 
       .container > * {
@@ -82,25 +87,33 @@
         width: 100%;
       }
 
-      .intro-inner {
-        min-height: 100vh;
-        background: radial-gradient(106.71% 106.71% at 50% -6.71%, rgba(186, 186, 217, 0) 0%, #babad9 60%);
-      }
-
       .intro {
         margin-bottom: 50vw;
       }
 
-      .intro h1 {
-        text-align: center;
-        font-size: min(max(2.25rem, 4vw), 4rem);
+      .intro-inner {
+        min-height: 100vh;
+        background: var(--background-circle);
+      }
+
+      .text-white {
         color: white;
+      }
+
+      .text-dark {
+        color: var(--color-black);
+      }
+
+      .title {
+        font-size: min(max(2.25rem, 4vw), 4rem);
+        text-align: center;
         margin: 3em;
         margin-left: 1em;
         margin-right: 1em;
+        text-shadow: 0 0 0.5em rgba(0, 0, 0, 0.15);
       }
 
-      .intro h1 strong {
+      .title strong {
         color: var(--color-dark);
       }
 
@@ -110,6 +123,13 @@
 
       .screen-home img {
         position: absolute;
+      }
+
+      .box {
+        border-radius: 0.65em;
+        background: var(--background-circle);
+        color: white;
+        padding: 1.8em;
       }
     </style>
   </head>
@@ -121,7 +141,7 @@
             <img src="assets/logo.svg" alt="HeimV Logo" width="150" />
           </a>
         </header>
-        <h1><strong>Das Verwaltungswerkzeug</strong> für Pfadi- und Gruppenhäuser</h1>
+        <h1 class="title text-white"><strong>Das Verwaltungswerkzeug</strong> für Pfadi- und Gruppenhäuser</h1>
         <div class="screen-home container">
           <img src="assets/screen-home.png" />
         </div>
@@ -132,7 +152,29 @@
     </div>
 
     <section class="container">
-      <h2>Features</h2>
+      <h2 class="title">
+        Reservationsverwaltung<br />
+        von <strong>A</strong>nfrage bis <strong>Z</strong>ahlung
+      </h2>
+      <p>
+        HeimV wurde als Werkzeug für den gesamten Buchungs- und Abrechnungsprozess für die Heime des
+        <a href="https://pfadi-heime.ch">Vereins Pfadiheime St. Georg</a> konzipiert und 2019 umgesetzt. 2020 kamen
+        weitere Heimvereine dazu. Seit 2021 wird HeimV von der
+        <a href="https://stiftung-pfadiheime.ch/">Stiftung Pfadiheime Schweiz unterstützt</a>.
+      </p>
+      <p>
+        Man kann damit Buchungsanfragen verwalten, Verträge für Buchungen erstellen, Tarife festlegen, den Verbrauch
+        abrechnen, Rechnungen versenden und Zahlungen verwalten. Mail- und Textvorlagen, Verträge, Tarife und Rechnungen
+        sind für jedes Heim anpassbar. Zahlungen können via ESR-Standard in HeimV eingelesen werden. Alles bequem über
+        den Browser.
+      </p>
+      <p>HeimV ist open source Software und wird stetig weiterentwickelt.</p>
     </section>
+    <div class="container">
+      <section class="box">
+        <h2 class="text-dark">Interessiert?</h2>
+        <p>Hat HeimV dein Interesse geweckt? <a href="mailto:info@heimv.ch">Nimm jetzt Kontakt auf</a></p>
+      </section>
+    </div>
   </body>
 </html>
