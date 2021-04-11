@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --color-white: #fafafa;
+        --color-light-gray: #babad9;
+        --color-primary: #7575d1;
+        --color-dark: #59599e;
+        --color-dark-gray: #464652;
+        --color-black: #2e2e52;
+      }
+
+      html,
+      body,
+      p,
+      hr,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin: 0;
+        padding: 0;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Patua One", bold;
+      }
+      html {
+        box-sizing: border-box;
+      }
+      *,
+      *::before,
+      *::after {
+        box-sizing: inherit;
+      }
+      img,
+      video {
+        height: auto;
+        max-width: 100%;
+      }
+      iframe {
+        border: 0;
+      }
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+      td,
+      th {
+        padding: 0;
+      }
+
+      body {
+        background-color: var(--color-white);
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+      }
+
+      .container > * {
+        max-width: 1200px;
+        width: 100%;
+      }
+
+      .w-100 {
+        width: 100%;
+      }
+
+      .intro-inner {
+        min-height: 100vh;
+        background: radial-gradient(106.71% 106.71% at 50% -6.71%, rgba(186, 186, 217, 0) 0%, #babad9 60%);
+      }
+
+      .intro {
+        margin-bottom: 50vw;
+      }
+
+      .intro h1 {
+        text-align: center;
+        font-size: min(max(2.25rem, 4vw), 4rem);
+        color: white;
+        margin: 3em;
+        margin-left: 1em;
+        margin-right: 1em;
+      }
+
+      .intro h1 strong {
+        color: var(--color-dark);
+      }
+
+      .screen-home {
+        position: relative;
+      }
+
+      .screen-home img {
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="intro">
+      <div class="intro-inner">
+        <header class="container">
+          <a href="/">
+            <img src="assets/logo.svg" alt="HeimV Logo" width="150" />
+          </a>
+        </header>
+        <h1><strong>Das Verwaltungswerkzeug</strong> für Pfadi- und Gruppenhäuser</h1>
+        <div class="screen-home container">
+          <img src="assets/screen-home.png" />
+        </div>
+      </div>
+      <svg class="w-100" viewBox="0 0 1192 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M484 102.5C224.5 173.5 0 0 0 0H1192V74C1192 74 743.5 31.5 484 102.5Z" fill="#BABAD9" />
+      </svg>
+    </div>
+
+    <section class="container">
+      <h2>Features</h2>
+    </section>
+  </body>
+</html>
