@@ -132,15 +132,38 @@
         padding: 1.8em;
         margin-bottom: 4em;
       }
+
+      .main-header {
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        flex-direction: row;
+      }
+
+      a.action-button {
+        padding: 0.5rem;
+        border-radius: 0.25rem;
+        text-align: center;
+        background-color: white;
+        max-width: 300px;
+        box-shadow: 0.2em 0.2em 0.5em rgba(0, 0, 0, 0.15);
+        text-decoration: none;
+      }
+      a.action-button:hover {
+        background-color: var(--color-primary);
+        color: white;
+        text-decoration: none;
+      }
     </style>
   </head>
   <body>
     <div class="intro">
       <div class="intro-inner">
-        <header class="container">
+        <header class="container main-header">
           <a href="/">
             <img src="assets/logo.svg" alt="HeimV Logo" width="150" />
           </a>
+          <a class="action-button" href="https://app.heimv.ch">zur App!</a>
         </header>
         <h1 class="title text-white">
           <strong>Das Verwaltungs&shy;werkzeug</strong> für Pfadi- und Gruppen&shy;häuser
