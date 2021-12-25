@@ -1,207 +1,72 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HeimV Heimverwaltungssoftware</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet" />
-    <style>
-      :root {
-        --color-white: #fafafa;
-        --color-light-gray: #babad9;
-        --color-primary: #7575d1;
-        --color-dark: #59599e;
-        --color-dark-gray: #464652;
-        --color-black: #2e2e52;
-        --background-circle: radial-gradient(106.71% 106.71% at 50% -6.71%, rgba(186, 186, 217, 0) 0%, #babad9 60%);
-      }
 
-      html,
-      body {
-        margin: 0;
-        padding: 0;
-      }
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        font-family: "Patua One", bold;
-        text-shadow: 0 0 0.5em rgba(0, 0, 0, 0.15);
-      }
-      html {
-        box-sizing: border-box;
-        font-size: 1.5em;
-      }
-      *,
-      *::before,
-      *::after {
-        box-sizing: inherit;
-      }
-      img,
-      video {
-        height: auto;
-        max-width: 100%;
-      }
-      iframe {
-        border: 0;
-      }
-      table {
-        border-collapse: collapse;
-        border-spacing: 0;
-      }
-      p {
-        line-height: 2em;
-      }
-      a,
-      a:visited {
-        color: var(--color-black);
-      }
-      a:hover,
-      a:active,
-      a:focus {
-        color: var(--color-dark);
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HeimV Heimverwaltungssoftware</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet" />
+  <link href="styles.css" rel="stylesheet" />
+</head>
 
-      body {
-        background-color: var(--color-white);
-        font-family: Roboto, Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif;
-      }
-
-      .container {
-        display: flex;
-        align-items: center;
-        padding: 1rem;
-        flex-direction: column;
-      }
-
-      .container > * {
-        max-width: 1200px;
-        width: 100%;
-      }
-
-      .w-100 {
-        width: 100%;
-      }
-
-      .intro {
-        margin-bottom: 50vw;
-      }
-
-      .intro-inner {
-        min-height: 100vh;
-        background: var(--background-circle);
-      }
-
-      .text-white {
-        color: white;
-      }
-
-      .text-dark {
-        color: var(--color-black);
-      }
-
-      .title {
-        font-size: min(max(2rem, 4vw), 4rem);
-        text-align: center;
-        margin: 3em;
-        margin-left: 1em;
-        margin-right: 1em;
-        text-shadow: 0 0 0.5em rgba(0, 0, 0, 0.15);
-      }
-
-      .title strong {
-        color: var(--color-dark);
-      }
-
-      .screen-home {
-        position: relative;
-      }
-
-      .screen-home img {
-        position: absolute;
-      }
-
-      .box {
-        border-radius: 0.65em;
-        background: var(--background-circle);
-        color: white;
-        padding: 1.8em;
-        margin-bottom: 4em;
-      }
-
-      .main-header {
-        display: flex;
-        align-items: center;
-        padding: 1rem;
-        flex-direction: row;
-        justify-content: center;
-      }
-
-      a.action-button {
-        padding: 0.5rem;
-        border-radius: 0.25rem;
-        text-align: center;
-        background-color: white;
-        max-width: 300px;
-        box-shadow: 0.2em 0.2em 0.5em rgba(0, 0, 0, 0.15);
-        text-decoration: none;
-      }
-      a.action-button:hover {
-        background-color: var(--color-primary);
-        color: white;
-        text-decoration: none;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="intro">
-      <div class="intro-inner">
-        <header class="container main-header">
-          <a href="/">
-            <img src="assets/logo.svg" alt="HeimV Logo" width="150" />
-          </a>
-          <a class="action-button" href="https://app.heimv.ch">zur App!</a>
-        </header>
-        <h1 class="title text-white">
-          <strong>Das Verwaltungs&shy;werkzeug</strong> für Pfadi- und Gruppen&shy;häuser
-        </h1>
-        <div class="screen-home container">
-          <img src="assets/screen-home.png" />
-        </div>
+<body>
+  <div class="intro">
+    <div class="intro-inner">
+      <header class="container main-header">
+        <a href="/">
+          <img src="assets/logo.svg" alt="HeimV Logo" width="150" />
+        </a>
+        <a class="action-button" href="https://github.com/diegosteiner/heimv">zum Code</a>
+        <a class="action-button bold" href="https://app.heimv.ch">zur App</a>
+      </header>
+      <h1 class="title text-white">
+        <strong>Das Verwaltungs&shy;werkzeug</strong><br />für Pfadi- und Gruppen&shy;häuser
+      </h1>
+      <div class="screen-home container">
+        <img src="assets/screen-home.png" />
       </div>
-      <svg class="w-100" viewBox="0 0 1192 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M484 102.5C224.5 173.5 0 0 0 0H1192V74C1192 74 743.5 31.5 484 102.5Z" fill="#BABAD9" />
-      </svg>
     </div>
+    <svg class="w-100" viewBox="0 0 1192 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M484 102.5C224.5 173.5 0 0 0 0H1192V74C1192 74 743.5 31.5 484 102.5Z" fill="#BABAD9" />
+    </svg>
+  </div>
 
-    <section class="container">
-      <h2 class="title">
-        Reservations&shy;verwaltung<br />
-        von <strong>A</strong>nfrage bis <strong>Z</strong>ahlung
-      </h2>
-      <p>
-        HeimV wurde als Werkzeug für den gesamten Buchungs- und Abrechnungsprozess für die Heime des
-        <a href="https://pfadi-heime.ch">Vereins Pfadiheime St. Georg</a> konzipiert und 2019 umgesetzt. 2020 kamen
-        weitere Heimvereine dazu. Seit 2021 wird HeimV von der
-        <a href="https://stiftung-pfadiheime.ch/">Stiftung Pfadiheime Schweiz unterstützt</a>.
-      </p>
-      <p>
-        Man kann damit Buchungsanfragen verwalten, Verträge für Buchungen erstellen, Tarife festlegen, den Verbrauch
-        abrechnen, Rechnungen versenden und Zahlungen verwalten. Mail- und Textvorlagen, Verträge, Tarife und Rechnungen
-        sind für jedes Heim anpassbar. Zahlungen können via ESR-Standard in HeimV eingelesen werden. Alles bequem über
-        den Browser.
-      </p>
-      <p>HeimV ist open source Software und wird stetig weiterentwickelt.</p>
-    </section>
-    <div class="container">
-      <section class="box">
-        <h2 class="text-dark">Interessiert?</h2>
-        <p>Hat HeimV dein Interesse geweckt? <a href="mailto:info@heimv.ch">Nimm jetzt Kontakt auf</a></p>
-      </section>
+  <section class="container">
+    <h2 class="title">
+      Reservations&shy;verwaltung<br />
+      von <strong>A</strong>nfrage bis <strong>Z</strong>ahlung
+    </h2>
+    <p>HeimV kann:</p>
+    <ul>
+      <li>Reservationsanfragen verwalten</li>
+      <li>Verträge und Anzahlungen erstellen</li>
+      <li>Tarife für Buchungen festlegen</li>
+      <li>Verbrauch abrechnen</li>
+      <li>Rechnungen versenden</li>
+      <li>Zahlungen via ESR-Standard einlesen und verwalten</li>
+      <li>... Alles bequem über den Browser.</li>
+    </ul>
+  </section>
+  <section class="container">
+    <p>
+      HeimV wurde als Werkzeug für den gesamten Buchungs- und Abrechnungsprozess für die Heime des
+      <a href="https://pfadi-heime.ch">Vereins Pfadiheime St. Georg</a> konzipiert und 2019 umgesetzt.
+    </p>
+    <p>
+      2020 kamen weitere Heimvereine dazu. Seit 2021 wird HeimV von der
+      <a href="https://stiftung-pfadiheime.ch/">Stiftung Pfadiheime Schweiz unterstützt</a>.
+    </p>
+    <p>HeimV ist open source Software (<a href="https://github.com/diegosteiner/heimv">GitHub</a>) und wird stetig
+      weiterentwickelt.</p>
+  </section>
+  <section class="container">
+    <div class="box">
+      <h2 class="text-dark">Interessiert?</h2>
+      <p>Hat HeimV dein Interesse geweckt? <a href="mailto:info@heimv.ch">Nimm jetzt Kontakt auf</a></p>
     </div>
-  </body>
+  </section>
+</body>
+
 </html>
