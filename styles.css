@@ -24,7 +24,7 @@ h6 {
 }
 html {
   box-sizing: border-box;
-  font-size: 1.5em;
+  font-size: 1.45em;
 }
 *,
 *::before,
@@ -111,6 +111,10 @@ body {
   color: var(--color-dark);
 }
 
+.center {
+  text-align: center;
+}
+
 .screen-home {
   position: relative;
 }
@@ -152,4 +156,14 @@ a.action-button:hover {
 
 p + ul {
   margin-top: 0;
+}
+ul > li {
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+}
+
+figure > figcaption {
+  text-align: center;
+  font-size: 0.6em;
+  margin-top: -0.5rem;
 }
