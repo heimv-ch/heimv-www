@@ -3,7 +3,7 @@ import Image from 'next/image'
 import React from 'react'
 import Link from '../node_modules/next/link'
 import MainNav from '../components/main_nav'
-import { container } from '../styles/layout'
+import { box, container } from '../styles/layout'
 import { css } from '@emotion/react'
 import { title } from '../styles/typography'
 import Intro from '../components/intro'
@@ -92,7 +92,7 @@ export default function Home() {
           weiterentwickelt.</p>
       </section>
       <section css={[container]}>
-        <div className="box">
+        <div css={box}>
           <h2 className="text-dark">Demonstration gefällig?</h2>
           <p>Hat HeimV dein Interesse geweckt? <a href="mailto:info@heimv.ch">Demozugang jetzt beantragen</a></p>
         </div>

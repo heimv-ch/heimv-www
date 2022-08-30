@@ -12,3 +12,10 @@ export const container = css`
   width: 100%;
 }
 `
+export const box = css`
+  border-radius: 0.65em;
+  background: var(--background-circle);
+  color: white;
+  padding: 1.8em;
+  margin-bottom: 4em;
+`
