@@ -18,10 +18,13 @@ jobs:
           node-version: "18.x"
 
       - name: install dependencies
-        run: npm ci
+        run: yarn install --immutable --immutable-cache --check-cache
 
       - name: build
-        run: yarn run export && touch ./out/.nojekyll && cp CNAME ./out/CNAME
+        run: yarn run export
+
+      - name: prepare gh-pages
+        run: touch ./out/.nojekyll && cp CNAME ./out/CNAME
 
       - name: deploy
         uses: JamesIves/github-pages-deploy-action@v4
