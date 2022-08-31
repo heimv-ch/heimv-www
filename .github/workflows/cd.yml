@@ -10,10 +10,10 @@ jobs:
 
     steps:
       - name: checkout
-        uses: actions/checkout@latest
+        uses: actions/checkout@v3
 
       - name: setup node
-        uses: actions/setup-node@latest
+        uses: actions/setup-node@v3
         with:
           node-version: "18.x"
 
@@ -21,7 +21,7 @@ jobs:
         run: npm ci
 
       - name: build
-        run: yarn run export && touch ./out/.nojekyll
+        run: yarn run export && touch ./out/.nojekyll && cp CNAME ./out/CNAME
 
       - name: deploy
         uses: JamesIves/github-pages-deploy-action@v4
