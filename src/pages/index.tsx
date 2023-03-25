@@ -6,7 +6,7 @@ import MainNav from '../components/main_nav'
 import { box, container } from '../styles/layout'
 import { css } from '@emotion/react'
 import { title } from '../styles/typography'
-import Intro from '../components/intro'
+import Intro from '../components/intro.tsxastro'
 
 
 export default function Home() {

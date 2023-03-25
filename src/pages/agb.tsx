@@ -2,8 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import React from 'react'
 import MainNav from '../components/main_nav'
-import { box, container } from '../styles/layout'
-import { title } from '../styles/typography'
+import { box, container } from '../../styles/layout'
+import { title } from '../../styles/typography'
 
 
 export default function Home() {

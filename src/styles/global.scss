@@ -1,0 +1,89 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+:root {
+	--color-bg: #3b5a59;
+	--color-fg: #fff2cc;
+	--color-black: #222;
+	--handdrawn-border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+html {
+	font-family: system-ui, sans-serif;
+	background-color: var(--color-bg);
+	color: var(--color-fg);
+}
+
+body {
+	padding: 1rem;
+	display: grid;
+	min-height: 100vh;
+	grid-template-columns: 1fr minmax(20em, 30vw);
+	gap: 1rem;
+
+	&>main {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 2rem;
+		line-height: 2.22rem;
+		font-size: 1.33rem;
+	}
+}
+
+.main-nav {
+	width: 100%;
+	font-size: 2rem;
+
+
+	ul {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+
+	li {
+		padding: 0;
+	}
+
+	a {
+		margin: 1rem 0;
+		text-decoration: none;
+		color: var(--color-fg);
+		padding: 0.25em;
+		width: 100%;
+		font-weight: bold;
+		display: block;
+
+		border: 3px solid transparent;
+
+		&:hover,
+		&:active {
+			border: 3px solid var(--color-fg);
+			border-radius: var(--handdrawn-border-radius);
+		}
+	}
+
+}
+
+h1 {
+	font-size: 3rem;
+	margin-bottom: 1em;
+}
+
+p {
+	margin-bottom: 1em;
+}
+
+a {
+	color: inherit;
+
+	&:visited,
+	&:active {
+		color: inherit;
+	}
+}
