@@ -16,10 +16,8 @@ import screenTenantImage from "../assets/screen-tenant.png";
     <h1 class="title text-white">
       <strong>Das Verwaltungs&shy;werkzeug</strong><br />für Pfadi- und Gruppen&shy;häuser
     </h1>
-    <div class="container relative">
-      <div class="">
-        <img src={screenHomeImage.src} alt="HeimV" width={1542} height={1138} />
-      </div>
+    <div id="hero-image" class="container relative">
+      <img src={screenHomeImage.src} alt="HeimV" width={1542} height={1138} />
     </div>
   </section>
 
@@ -117,12 +115,27 @@ import screenTenantImage from "../assets/screen-tenant.png";
 <style lang="scss">
   .intro {
     min-height: 100vh;
+    margin-bottom: -33vh;
+  }
+
+  #hero-image {
+    transition: transform 0.5 linear;
   }
 
   body {
     background-image: url("/background.svg");
     background-position: top center;
-    background-size: 120vw 100vh;
+    background-size: auto 100vh;
     background-repeat: no-repeat;
   }
 </style>
+
+<script>
+  const heroImage = document.getElementById("hero-image");
+
+  addEventListener("scroll", (event) => {
+    if (!heroImage) return;
+    const top = -window.scrollY / 3;
+    heroImage.style.transform = `translateY(${top}px)`;
+  });
+</script>
