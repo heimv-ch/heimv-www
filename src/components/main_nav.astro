@@ -1,25 +1,28 @@
 ---
+import logo from "../assets/logo.svg";
 ---
 
-<header>
-  <nav>
-    <Link href="/">
-      <Image src="/assets/logo.svg" alt="HeimV Logo" width={150} height={48} />
-    </Link>
+<header class="container">
+  <nav class="nav">
+    <img src={logo.src} alt="HeimV Logo" width={150} height={48} />
     <div>
-      <a css={styles.button} href="https://github.com/diegosteiner/heimv">zum Code</a>
-      <a css={styles.button} className="bold" href="https://app.heimv.ch">zur App</a>
+      <a class="button" href="https://github.com/diegosteiner/heimv">zum Code</a>
+      <a class="button bold" href="https://app.heimv.ch">zur App</a>
     </div>
   </nav>
 </header>
 
-<style>
-  nav {
+<style lang="scss">
+  header {
+    padding: 1rem;
+  }
+
+  .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    button {
+    .button {
       padding: 0.5rem;
       border-radius: 0.25rem;
       text-align: center;

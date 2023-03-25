@@ -1,4 +1,128 @@
 ---
+import Layout from "../layouts/Layout.astro";
+import screenHomeImage from "../assets/screen-home.png";
+import screenBook1Image from "../assets/screen-book-1.png";
+import screenBook2Image from "../assets/screen-book-2.png";
+import screenBookingsImage from "../assets/screen-bookings.png";
+import screenBookingImage from "../assets/screen-booking.png";
+import screenUsagesImage from "../assets/screen-usages.png";
+import screenInvoicesImage from "../assets/screen-invoices.png";
+import screenProcessesImage from "../assets/screen-processes.png";
+import screenTenantImage from "../assets/screen-tenant.png";
 ---
 
-<meta http-equiv="refresh" content="0; url=/heimfibel/de-CH/articles" />
+<Layout title="HeimV - Die Heimverwaltungssoftware">
+  <section class="intro">
+    <h1 class="title text-white">
+      <strong>Das Verwaltungs&shy;werkzeug</strong><br />für Pfadi- und Gruppen&shy;häuser
+    </h1>
+    <div class="container relative">
+      <div class="">
+        <img src={screenHomeImage.src} alt="HeimV" width={1542} height={1138} />
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <h2 class="title">
+      Reservations&shy;verwaltung<br />von <strong>A</strong>nfrage bis <strong>Z</strong>ahlung
+    </h2>
+    <h3>Die Gründe</h3>
+    <ul>
+      <li>
+        <strong>HeimV</strong> vereinfacht die Verwaltung von Reservationen und spart damit Zeit, Geld und Nerven.
+      </li>
+      <li>
+        <strong>HeimV</strong> ist genau auf die Bedürfnisse von Schweizer Pfadiheimen und Gruppenhäusern zugeschnitten.
+      </li>
+      <li><strong>HeimV</strong> bietet viel aus einer Hand, siehe <a href="#features">Features</a></li>
+      <li><strong>HeimV</strong> ist ein Schweizer Produkt und unterstützt Schweizer Unternehmen</li>
+    </ul>
+  </section>
+
+  <section class="container">
+    <h3 id="features">Die Features</h3>
+    <ul>
+      <li><a href="#feature-bookings">Reservationsanfragen verwalten</a></li>
+      <li>Verträge und Anzahlungen erstellen</li>
+      <li><a href="#feature-tarifs">Tarife für Buchungen festlegen</a></li>
+      <li>Verbrauch abrechnen</li>
+      <li><a href="#feature-invoices">Rechnungen versenden</a></li>
+      <li>Zahlungen via ESR-Standard einlesen und verwalten</li>
+    </ul>
+    <p>... alles bequem über den Browser.</p>
+
+    <h4 id="feature-bookings" class="feature-title">Reservationsanfragen</h4>
+    <figure>
+      <img src={screenBook1Image.src} alt="" width={1542} height={1138} />
+      <figcaption>Reservationsformular Schritt 1</figcaption>
+    </figure>
+    <figure>
+      <img src={screenBook2Image.src} alt="" width={1542} height={1138} />
+      <figcaption>Reservationsformular Schritt 2</figcaption>
+    </figure>
+    <figure>
+      <img src={screenBookingsImage.src} alt="" width={1542} height={1138} />
+      <figcaption>Verwaltungsansicht</figcaption>
+    </figure>
+    <h4 id="feature-tarifs" class="feature-title">Tarife und Verbrauch</h4>
+    <figure>
+      <img src={screenBookingImage.src} alt="" width={1542} height={1138} />
+      <figcaption>Buchungsansicht</figcaption>
+    </figure>
+    <figure>
+      <img src={screenUsagesImage.src} alt="" width={1542} height={1138} />
+      <figcaption>Verbrauch</figcaption>
+    </figure>
+    <figure>
+      <img src={screenTenantImage.src} alt="" width={1542} height={1138} />
+      <figcaption>Mieterübersicht</figcaption>
+    </figure>
+    <h4 id="feature-invoices" class="feature-title">Rechnungen und Zahlungen</h4>
+    <figure>
+      <img src={screenInvoicesImage.src} alt="" width={1542} height={1138} />
+      <figcaption>Rechnungsübersicht</figcaption>
+    </figure>
+    <h4 id="feature-process" class="feature-title">Prozess</h4>
+    <figure>
+      <img src={screenProcessesImage.src} alt="" width={1542} height={1138} />
+    </figure>
+
+    <section class="container">
+      <h3>Die Story</h3>
+      <p>
+        HeimV wurde als Werkzeug für den gesamten Buchungs- und Abrechnungsprozess für die Heime des &nbsp;<a
+          href="https://pfadi-heime.ch">Vereins Pfadiheime St. Georg</a
+        > konzipiert und 2019 umgesetzt.
+      </p>
+      <p>
+        2020 kamen weitere Heimvereine dazu. Seit 2021 wird HeimV von der &nbsp;<a
+          href="https://stiftung-pfadiheime.ch/">Stiftung Pfadiheime Schweiz unterstützt</a
+        >.
+      </p>
+      <p>
+        HeimV ist open source Software (<a href="https://github.com/diegosteiner/heimv">GitHub</a>) und wird stetig
+        weiterentwickelt.
+      </p>
+    </section>
+    <section class="container">
+      <div class="box">
+        <h2 class="text-dark">Demonstration gefällig?</h2>
+        <p>Hat HeimV dein Interesse geweckt? <a href="mailto:info@heimv.ch">Demozugang jetzt beantragen</a></p>
+      </div>
+    </section>
+  </section>
+</Layout>
+
+<style lang="scss">
+  .intro {
+    min-height: 100vh;
+  }
+
+  body {
+    background-image: url("/background.svg");
+    background-position: top center;
+    background-size: 120vw 100vh;
+    background-repeat: no-repeat;
+  }
+</style>
