@@ -2,41 +2,18 @@
 import logo from "../assets/logo.svg";
 ---
 
-<header class="container">
-  <nav class="nav">
-    <img src={logo.src} alt="HeimV Logo" width={150} height={48} />
+<header class="container mx-auto p-4 max-w-5xl text-lg text-black">
+  <nav class="flex justify-between items-center">
+    <a href="/"><img src={logo.src} alt="HeimV Logo" width={150} height={48} /></a>
     <div>
-      <a class="button" href="https://github.com/diegosteiner/heimv">zum Code</a>
-      <a class="button bold" href="https://app.heimv.ch">zur App</a>
+      <a
+        class="p-3 rounded hover:bg-dark text-center ms-4 grow-0 drop-shadow whitespace-nowrap hover:text-white no-underline"
+        href="https://github.com/diegosteiner/heimv">zum Code</a
+      >
+      <a
+        class="p-3 rounded hover:bg-dark text-center ms-4 grow-0 drop-shadow whitespace-nowrap font-bold hover:text-white no-underline"
+        href="https://app.heimv.ch">zur App</a
+      >
     </div>
   </nav>
 </header>
-
-<style lang="scss">
-  header {
-    padding: 1rem;
-  }
-
-  .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    .button {
-      padding: 0.5rem;
-      border-radius: 0.25rem;
-      text-align: center;
-      text-decoration: none;
-      flex: 0;
-      margin-left: 1em;
-      white-space: nowrap;
-      text-shadow: 0 0 0.25em var(--color-light-gray);
-
-      &:hover {
-        text-shadow: 0 0 0.25em var(--color-black);
-        color: white;
-        text-decoration: none;
-      }
-    }
-  }
-</style>
