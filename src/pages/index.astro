@@ -35,7 +35,7 @@ import screensImage from "../assets/screens.png";
       </li>
       <li class="pb-5">
         <span class="font-bold text-dark font-title me-1 text-2xl">HeimV</span> bietet alles wichtige aus einer Hand: <a
-          href="#features"
+          href="features#features"
           class="text-dark underline hover:text-primary">Features</a
         >
       </li>
@@ -50,15 +50,19 @@ import screensImage from "../assets/screens.png";
     <h2 class="text-4xl mt-10 mb-5 font-title" id="features">Die Features</h2>
     <ul class="list-disc ps-6">
       <li class="pb-3">
-        <a class="underline text-dark hover:text-primary" href="#feature-bookings">Reservationsanfragen verwalten</a>
+        <a class="underline text-dark hover:text-primary" href="features#feature-bookings"
+          >Reservationsanfragen verwalten</a
+        >
       </li>
       <li class="pb-3">Verträge und Anzahlungen erstellen</li>
       <li class="pb-3">
-        <a class="underline text-dark hover:text-primary" href="#feature-tarifs">Tarife für Buchungen festlegen</a>
+        <a class="underline text-dark hover:text-primary" href="features#feature-tarifs"
+          >Tarife für Buchungen festlegen</a
+        >
       </li>
       <li class="pb-3">Verbrauch abrechnen</li>
       <li class="pb-3">
-        <a class="underline text-dark hover:text-primary" href="#feature-invoices">Rechnungen versenden</a>
+        <a class="underline text-dark hover:text-primary" href="features#feature-invoices">Rechnungen versenden</a>
       </li>
       <li class="pb-3">Zahlungen via ESR-Standard einlesen und verwalten</li>
     </ul>
@@ -101,27 +105,27 @@ import screensImage from "../assets/screens.png";
       </p>
     </div>
   </section>
-
-  <style lang="scss">
-    #hero-image {
-      transition: transform 0.1s linear;
-    }
-
-    body {
-      background-image: url("/background.svg");
-      background-position: top center;
-      background-size: auto 100vh;
-      background-repeat: no-repeat;
-    }
-  </style>
-
-  <script>
-    const heroImage = document.getElementById("hero-image");
-
-    addEventListener("scroll", (event) => {
-      if (!heroImage) return;
-      const top = -window.scrollY / 2;
-      heroImage.style.transform = `translateY(${top}px)`;
-    });
-  </script>
 </Layout>
+
+<style lang="scss">
+  #hero-image {
+    transition: transform 0.1s linear;
+  }
+
+  body {
+    background-image: url("/background.svg");
+    background-position: top center;
+    background-size: auto 100vh;
+    background-repeat: no-repeat;
+  }
+</style>
+
+<script>
+  const heroImage = document.getElementById("hero-image");
+
+  addEventListener("scroll", (event) => {
+    if (!heroImage) return;
+    const top = -window.scrollY / 2;
+    heroImage.style.transform = `translateY(${top}px)`;
+  });
+</script>
