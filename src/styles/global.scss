@@ -1,13 +1,25 @@
 html {
 	font-size: large;
+	background-color: #f3f3fb;
 }
 
 .bg-circle {
 	background: radial-gradient(107% 107% at 50% -7%, rgba(75, 75, 148, 0) 0%, #59599e 60%);
 }
 
-.font-title {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	font-family: "Patua One", bold;
 	// text-shadow: 0 0 0.5em rgba(0, 0, 0, 0.15);
 	// margin: 2em 0 0.4em 0;
+}
+
+.prose {
+	p {
+		margin: 0 0 0.5em 0;
+	}
 }
