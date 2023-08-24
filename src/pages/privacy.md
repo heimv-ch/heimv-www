@@ -92,4 +92,4 @@ Sie können jederzeit eine unentgeltliche Auskunft über die bei uns zu ihrer Pe
 
 ## Änderung dieser Datenschutz-Erklärung
 
-Diese Datenschutzerklärung wird angepasst, wenn sich etwas an der Art und Weise ändert, wie wir mit Personendaten umgehen. Oder wenn wir sonst nichts besseres zu tun haben. :-) Für weitere Auskünfte wenden Sie sich an [privacy@heimv.ch](mailto:privacy@heimv.ch)
+Diese Datenschutzerklärung wird angepasst, wenn sich etwas an der Art und Weise ändert, wie wir mit Personendaten umgehen. Die Änderungen werden auf der Webseite publiziert. Für weitere Auskünfte wenden Sie sich an [privacy@heimv.ch](mailto:privacy@heimv.ch)
