@@ -3,7 +3,7 @@ import Layout from "../layouts/Layout.astro";
 const { frontmatter } = Astro.props;
 ---
 
-<Layout url={frontmatter.url}>
+<Layout url={frontmatter.url} title={frontmatter.title}>
   <main class="prose container mx-auto max-w-3xl p-4 h-min-screen">
     <div class="bg-white rounded-md shadow p-10">
       <slot />

@@ -1,6 +1,6 @@
 ---
 layout: ../layouts/Markdown.astro
-title: AGB
+title: AGB · HeimV – Die Heimverwaltungssoftware
 ---
 
 # AGB
@@ -156,3 +156,6 @@ HeimV wird betrieben von:
   Bestimmung und dem Willen der Parteien zum Zeitpunkt des
   Vertragsabschlusses weitestgehend Rechnung trägt. Gleiches gilt für
   eventuelle Lücken in diesen AGB.
+
+
+*Stand: 25.08.2023*
