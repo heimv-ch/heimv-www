@@ -5,6 +5,8 @@ title: AGB · HeimV – Die Heimverwaltungssoftware
 
 # AGB
 
+*Stand: 25.08.2023*
+
 *HeimV soll die Verwaltung von Pfadiheimen und Gruppenunterkünften
 einfacher machen. Dafür suchen wir eine Beziehung zu unseren Kunden, die
 aufrecht, fair und dem guten Zweck gewidmet ist.*
@@ -158,4 +160,3 @@ HeimV wird betrieben von:
   eventuelle Lücken in diesen AGB.
 
 
-*Stand: 25.08.2023*

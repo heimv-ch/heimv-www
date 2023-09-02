@@ -5,6 +5,8 @@ title: Datenschutzerklärung · HeimV – Die Heimverwaltungssoftware
 
 # Datenschutz&shy;erklärung
 
+*Stand: 02.09.2023*
+
 «HeimV» ist eine Buchungsplattform für Pfadiheime und Gruppenhäuser.  Dabei agiert HeimV nicht als Vermieterin, sondern stellt nur ein Tool zur Verwaltung von Buchungen und Buchungsanfragen für die Organisation, die ein Heim betreibt, zur Verfügung. HeimV finanziert sich über die Beiträge der vermietenden Organisation und **niemals** über den Verkauf von Daten.
 
 ## Kontaktadressen
@@ -78,9 +80,13 @@ Wir nutzen insbesondere:
 
 - **Dienste von [Cloudflare, Inc.](https://www.cloudflare.com)**: Die Anfragen an HeimV werden durch das Netz von Cloudflare geleitet, um es unter anderem vor DDoS Angriffen zu schützen. [Datenschutzerklärung von Cloudflare](https://www.cloudflare.com/privacypolicy/).
 
+- **Dienste von [Wittwer IT Services](https://www.wittwer-it.ch)**: E-Mails werden über die Mailserver von Wittwer IT in der Schweiz aus versendet. [Datenschutzerklärung](https://www.wittwer-it.ch/disclaimer/).
+
+- **Dienste von [Mailchimp](https://mailchimp.com/de/)**: Für den Versand des Newsletters **an die vermietenden Organisationen** verwenden wir Mailchimp. [Datenschutzerklärung](https://www.intuit.com/privacy/statement/)
+
 ## Nutzung der Daten über die Leistungs&shy;erbringung hinaus
 
-Für die Geschäfts-und Buchführung bewahren wir die Buchungsdaten längerfristig auf, unabhängig davon, ob die Reservation/Buchung zustande gekommen ist oder nicht.
+Für die Geschäfts-und Buchführung bewahren wir die Buchungsdaten bis maximal 5 Jahre auf, unabhängig davon, ob die Reservation/Buchung zustande gekommen ist oder nicht.
 
 Wir analysieren kategorische Informationen aus den Buchungsdaten periodisch um unser Angebot verbessern zu können (z.B. Herkunftsregion, Gruppenart, Gruppengrösse, Altersstruktur, Aufenthaltsdauer).
 
@@ -94,5 +100,3 @@ Sie können jederzeit eine unentgeltliche Auskunft über die bei uns zu ihrer Pe
 
 Diese Datenschutzerklärung wird angepasst, wenn sich etwas an der Art und Weise ändert, wie wir mit Personendaten umgehen. Die Änderungen werden auf der Webseite publiziert. Für weitere Auskünfte wenden Sie sich an [privacy@heimv.ch](mailto:privacy@heimv.ch)
 
-
-*Stand: 25.08.2023*
