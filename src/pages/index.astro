@@ -15,7 +15,7 @@ import screensImage from "../assets/screens.png";
   </section>
 
   <section class="container mx-auto max-w-5xl p-4 h-screen flex flex-col justify-center align-center">
-    <h1 class="font-title text-[clamp(4vw,8vw,3rem)] leading-snug text-center font-bold mx-5 my-[4em]">
+    <h1 class="font-title leading-snug text-center font-bold mx-5 my-[4em]">
       Reservations&shy;verwaltung<br />von <strong class="text-dark">A</strong>nfrage bis <strong class="text-dark"
         >Z</strong
       >ahlung
@@ -26,12 +26,12 @@ import screensImage from "../assets/screens.png";
     <h2 class="text-4xl mt-10 mb-5 font-title">Die Vorteile</h2>
     <ul>
       <li class="pb-5">
-        <span class="font-bold text-dark font-title me-1 text-2xl">HeimV</span> vereinfacht die Verwaltung von Reservationen
-        und spart damit Zeit, Geld und Nerven.
+        <span class="font-bold text-dark font-title me-1 text-2xl">HeimV</span> vereinfacht die Verwaltung von
+        Reservationen und spart damit Zeit, Geld und Nerven.
       </li>
       <li class="pb-5">
-        <span class="font-bold text-dark font-title me-1 text-2xl">HeimV</span> ist genau auf die Bedürfnisse von Schweizer
-        Pfadiheimen und Gruppenhäusern zugeschnitten.
+        <span class="font-bold text-dark font-title me-1 text-2xl">HeimV</span> ist genau auf die Bedürfnisse von
+        Schweizer Pfadiheimen und Gruppenhäusern zugeschnitten.
       </li>
       <li class="pb-5">
         <span class="font-bold text-dark font-title me-1 text-2xl">HeimV</span> bietet alles wichtige aus einer Hand: <a
@@ -40,8 +40,8 @@ import screensImage from "../assets/screens.png";
         >
       </li>
       <li class="pb-5">
-        <span class="font-bold text-dark font-title me-1 text-2xl">HeimV</span> wird in der Schweiz entwickelt und betrieben.
-        Alle Daten sind auf Servern in der Schweiz.
+        <span class="font-bold text-dark font-title me-1 text-2xl">HeimV</span> wird in der Schweiz entwickelt und
+        betrieben. Alle Daten sind auf Servern in der Schweiz.
       </li>
     </ul>
   </section>
@@ -115,8 +115,14 @@ import screensImage from "../assets/screens.png";
   body {
     background-image: url("/background.svg");
     background-position: top center;
-    background-size: auto 100vh;
+    background-size: 100vw 95vh;
     background-repeat: no-repeat;
+  }
+
+  @media (orientation: portrait) {
+    body {
+      background-size: auto 90vh;
+    }
   }
 </style>
 
