@@ -1,0 +1,26 @@
+---
+import { type CollectionEntry, getCollection } from "astro:content";
+import Layout from "../../../layouts/Layout.astro";
+import { Image } from "astro:assets";
+
+export async function getStaticPaths() {
+  const features = await getCollection("features");
+  return features.map((feature) => ({
+    params: { slug: feature.slug },
+    props: { ...feature },
+  }));
+}
+type Props = CollectionEntry<"features">;
+
+const feature = Astro.props;
+const { Content } = await feature.render();
+const { title, image } = feature.data;
+---
+
+<Layout title={title}>
+  <main class="container pb-4 mt-5 mx-auto">
+    <Image src={image} alt={title} />
+    <h1 class="text-7xl text-center">{title}</h1>
+    <Content />
+  </main>
+</Layout>

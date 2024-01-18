@@ -1,5 +1,5 @@
 ---
-layout: ../layouts/Markdown.astro
+layout: ../layouts/MarkdownLayout.astro
 title: AGB · HeimV – Die Heimverwaltungssoftware
 ---
 
@@ -21,10 +21,8 @@ Heimverwaltungssoftware (nachfolgend «HeimV» genannt).
 
 HeimV wird betrieben von:
 
-*HeimV Software, Inhaber Diego Steiner*
-
-*Buchhaldenstr. 7*
-
+*HeimV Software, Inhaber Diego Steiner*\
+*Buchhaldenstr. 7*\
 *8610 Uster*
 
 - Mit dem Kunden abgeschlossene Einzelvereinbarungen gehen den

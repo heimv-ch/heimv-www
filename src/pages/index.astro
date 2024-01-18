@@ -6,7 +6,7 @@ import screensImage from "../assets/screens.png";
 
 <Layout title="HeimV – Die Heimverwaltungssoftware">
   <section class="container mx-auto max-w-5xl p-4 h-[80vh] flex flex-col justify-center align-center relative">
-    <h1 class="text-white font-title text-[clamp(4vw,8vw,3rem)] leading-snug text-center font-bold mx-5 mb-10">
+    <h1 class="text-white font-heading text-[clamp(4vw,8vw,3rem)] leading-snug text-center font-bold mx-5 mb-10">
       <span class="text-dark">Das Verwaltungs&shy;werkzeug</span><br />für Pfadi- und Gruppen&shy;häuser
     </h1>
     <div id="hero-image" class="absolute top-[90%] w-full left-0">
@@ -15,39 +15,39 @@ import screensImage from "../assets/screens.png";
   </section>
 
   <section class="container mx-auto max-w-5xl p-4 h-screen flex flex-col justify-center align-center">
-    <h1 class="font-title leading-snug text-center font-bold mx-5 my-[4em]">
-      Reservations&shy;verwaltung<br />von <strong class="text-dark">A</strong>nfrage bis <strong class="text-dark"
-        >Z</strong
-      >ahlung
+    <h1 class="font-heading text-[clamp(4vw,8vw,3rem)] leading-snug text-black text-center font-bold mx-5 my-[4em]">
+      Reservations&shy;verwaltung<br />von
+      <strong class="text-[1.5em] text-effect-gradient">A</strong>nfrage bis
+      <strong class="text-[1.5em] text-effect-gradient">Z</strong>ahlung
     </h1>
   </section>
 
   <section class="container mx-auto max-w-5xl p-4">
-    <h2 class="text-4xl mt-10 mb-5 font-title">Die Vorteile</h2>
+    <h2 class="text-4xl mt-10 mb-5 font-heading">Die Vorteile</h2>
     <ul>
       <li class="pb-5">
-        <span class="font-bold text-dark font-title me-1 text-2xl">HeimV</span> vereinfacht die Verwaltung von
-        Reservationen und spart damit Zeit, Geld und Nerven.
+        <span class="font-bold text-dark font-heading me-1 text-2xl">HeimV</span> vereinfacht die Verwaltung von Reservationen
+        und spart damit Zeit, Geld und Nerven.
       </li>
       <li class="pb-5">
-        <span class="font-bold text-dark font-title me-1 text-2xl">HeimV</span> ist genau auf die Bedürfnisse von
-        Schweizer Pfadiheimen und Gruppenhäusern zugeschnitten.
+        <span class="font-bold text-dark font-heading me-1 text-2xl">HeimV</span> ist genau auf die Bedürfnisse von Schweizer
+        Pfadiheimen und Gruppenhäusern zugeschnitten.
       </li>
       <li class="pb-5">
-        <span class="font-bold text-dark font-title me-1 text-2xl">HeimV</span> bietet alles wichtige aus einer Hand: <a
+        <span class="font-bold text-dark font-heading me-1 text-2xl">HeimV</span> bietet alles wichtige aus einer Hand: <a
           href="features#features"
           class="text-dark underline hover:text-primary">Features</a
         >
       </li>
       <li class="pb-5">
-        <span class="font-bold text-dark font-title me-1 text-2xl">HeimV</span> wird in der Schweiz entwickelt und
-        betrieben. Alle Daten sind auf Servern in der Schweiz.
+        <span class="font-bold text-dark font-heading me-1 text-2xl">HeimV</span> wird in der Schweiz entwickelt und betrieben.
+        Alle Daten sind auf Servern in der Schweiz.
       </li>
     </ul>
   </section>
 
   <section class="container mx-auto max-w-5xl p-5">
-    <h2 class="text-4xl mt-10 mb-5 font-title" id="features">Die Features</h2>
+    <h2 class="text-4xl mt-10 mb-5 font-heading" id="features">Die Features</h2>
     <ul class="list-disc ps-6">
       <li class="pb-3">
         <a class="underline text-dark hover:text-primary" href="features#feature-bookings"
@@ -72,11 +72,11 @@ import screensImage from "../assets/screens.png";
         <img class="my-10 mx-auto" src={screensImage.src} alt="" width={800} height={590} />
       </figure></a
     >
-    <p class="my-10 text-center">... alles bequem über den Browser.</p>
+    <p class="my-10 text-center">bequem über den Browser.</p>
   </section>
 
   <section class="container mx-auto max-w-5xl p-4">
-    <h2 class="text-4xl mt-10 mb-5 font-title" id="features">Die Story</h2>
+    <h2 class="text-4xl mt-10 mb-5 font-heading" id="features">Die Story</h2>
     <p class="mb-5">
       HeimV wurde als Werkzeug für den gesamten Buchungs- und Abrechnungsprozess für die Heime des<a
         href="https://pfadi-heime.ch">Vereins Pfadiheime St. Georg</a
@@ -97,7 +97,7 @@ import screensImage from "../assets/screens.png";
   </section>
   <section class="container mx-auto max-w-5xl p-4">
     <div class="rounded-lg bg-circle p-10 text-xl text-white my-[20vh] h-[40vh] flex flex-col justify-center">
-      <h2 class="mb-8 text-4xl font-title text-center">Demonstration gefällig?</h2>
+      <h2 class="mb-8 text-4xl font-heading text-center">Demonstration gefällig?</h2>
       <p class="text-center">
         Möchtet ihr HeimV unverbindlich ausprobieren?
 
@@ -110,6 +110,16 @@ import screensImage from "../assets/screens.png";
 <style lang="scss">
   #hero-image {
     transition: transform 0.1s linear;
+  }
+
+  .bg-circle {
+    background: radial-gradient(107% 107% at 50% -7%, rgba(75, 75, 148, 0) 0%, #59599e 60%);
+  }
+
+  .text-effect-gradient {
+    background: linear-gradient(135deg, theme("colors.light"), theme("colors.primary"));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   body {

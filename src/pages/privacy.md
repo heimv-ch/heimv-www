@@ -1,5 +1,5 @@
 ---
-layout: ../layouts/Markdown.astro
+layout: ../layouts/MarkdownLayout.astro
 title: Datenschutzerklärung · HeimV – Die Heimverwaltungssoftware
 ---
 
@@ -13,12 +13,9 @@ title: Datenschutzerklärung · HeimV – Die Heimverwaltungssoftware
 
 Datenschutzbeauftragter und verantwortlich für die Bearbeitung von Personendaten:
 
-*Diego Steiner*
-
-*Buchhaldenstr. 7*
-
-*8610 Uster*
-
+*Diego Steiner*\
+*Buchhaldenstr. 7*\
+*8610 Uster*\
 *[privacy@heimv.ch](mailto:privacy@heimv.ch)*
 
 ## Datenerhebung und Verwendungszweck
