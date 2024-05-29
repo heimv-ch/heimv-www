@@ -1,6 +1,6 @@
 ---
 title: Auszüge
-lead: Daten einfach aus HeimV exportieren
+lead: Buchungsdaten einfach exportieren
 # image: ./digests.png
 ---
 

@@ -4,24 +4,25 @@ import Footer from "../components/footer.astro";
 
 export interface Props {
   title: string;
+  transparent?: boolean;
 }
 
-const { title } = Astro.props;
+const { title, transparent = false } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="de" class="bg-body">
+<html lang="de" class="bg-heimv-100">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
+    <title>{title} · HeimV – Die Heimverwaltungssoftware</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet" />
   </head>
   <body class="text-xl">
-    <MainNav />
+    <MainNav transparent={transparent} />
     <slot />
     <Footer />
   </body>

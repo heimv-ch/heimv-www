@@ -1,0 +1,31 @@
+---
+export interface Props {
+  links: { title: string; href: string }[];
+}
+
+const { links } = Astro.props;
+---
+
+<nav>
+  <ul class="list-none flex uppercase text-sm uppercase text-heimv-700 gap-4">
+    <li>
+      <a href="/">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 111 120" fill="currentColor" class="w-[0.8em] mt-1">
+          <polyline class="a" points="0 25.3 56.9 0 113.9 24.9 113.9 25.3 113.9 111.8 0 111.8 0 25.3"></polyline>
+        </svg>
+      </a>
+    </li>
+    {
+      links.map(({ title, href }) => (
+        <>
+          <li class="text-heimv-300">/</li>
+          <li>
+            <a href={href} title={title}>
+              {title}
+            </a>
+          </li>
+        </>
+      ))
+    }
+  </ul>
+</nav>

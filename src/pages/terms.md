@@ -1,6 +1,6 @@
 ---
 layout: ../layouts/MarkdownLayout.astro
-title: AGB · HeimV – Die Heimverwaltungssoftware
+title: AGB
 ---
 
 # AGB

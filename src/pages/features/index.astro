@@ -1,0 +1,43 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import Breadcrumbs from "../../components/breadcrumbs.astro";
+// import screenBook1Image from "../../assets/screen-book-1.png";
+// import screenBook2Image from "../../assets/screen-book-2.png";
+// import screenBookingsImage from "../../assets/screen-bookings.png";
+// import screenBookingImage from "../../assets/screen-booking.png";
+// import screenUsagesImage from "../../assets/screen-usages.png";
+// import screenInvoicesImage from "../../assets/screen-invoices.png";
+// import screenProcessesImage from "../../assets/screen-processes.png";
+// import screenTenantImage from "../../assets/screen-tenant.png";
+
+const features = await getCollection("features");
+---
+
+<Layout title="Features · HeimV – Die Heimverwaltungssoftware">
+  <div class="py-6 px-4 container max-w-5xl mx-auto">
+    <Breadcrumbs links={[{ title: "Highlights", href: "/features" }]} />
+  </div>
+  <main class="container mx-auto max-w-5xl p-4 min-h-screen">
+    <h1 class="font-heading text-[clamp(4vw,8vw,3rem)] leading-snug text-center font-bold mx-5 my-[4em]">Highlights</h1>
+    <ul class="list-disc ps-6">
+      {
+        features.map((feature) => {
+          return (
+            <li class="pb-4">
+              <a class="block" href={`/features/${feature.slug}`}>
+                <h3 class="mt-0 font-bold underline text-heimv-700 hover:text-heimv-600">{feature.data.title}</h3>
+                <p>{feature.data.lead}</p>
+              </a>
+            </li>
+          );
+        })
+      }
+      <!-- 
+  </main>
+</Layout>
+-->
+    </ul>
+  </main>
+</Layout>

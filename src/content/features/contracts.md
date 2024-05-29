@@ -1,6 +1,6 @@
 ---
-title: Auszüge
-lead: Daten einfach aus HeimV exportieren
+title: Verträge
+lead: Vertragstext aus Vorlage übernehmen und individuell anpassen
 # image: ./digests.png
 ---
 

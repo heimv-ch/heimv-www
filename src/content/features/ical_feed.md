@@ -1,6 +1,6 @@
 ---
-title: Auszüge
-lead: Daten einfach aus HeimV exportieren
+title: Kalenderintegration
+lead: Belegungsplan einfach in Outlook, Google Calendar & Co. integrieren
 # image: ./digests.png
 ---
 

@@ -6,7 +6,11 @@
   "image": "mcr.microsoft.com/devcontainers/typescript-node:1-20-bullseye",
   "customizations": {
     "vscode": {
-      "extensions": ["astro-build.astro-vscode", "jock.svg"]
+      "extensions": [
+        "astro-build.astro-vscode",
+        "jock.svg",
+        "bradlc.vscode-tailwindcss"
+      ]
     }
   }
 

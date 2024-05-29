@@ -1,12 +1,16 @@
 ---
+import Breadcrumbs from "../components/breadcrumbs.astro";
 import Layout from "./Layout.astro";
 import Markdown from "./Markdown.astro";
 const { frontmatter } = Astro.props;
 ---
 
 <Layout title={frontmatter.title}>
-  <main class="container mx-auto max-w-3xl p-4 min-h-screen">
-    <div class="bg-white rounded-md shadow p-10">
+  <div class="py-6 px-4 container max-w-5xl mx-auto">
+    <Breadcrumbs links={[{ title: frontmatter.title, href: frontmatter.slug }]} />
+  </div>
+  <main class="container mx-auto max-w-3xl p-4 mb-8 min-h-screen">
+    <div class="bg-heimv-50 rounded-md shadow p-10">
       <Markdown>
         <slot />
       </Markdown>

@@ -1,6 +1,6 @@
 ---
 layout: ../layouts/MarkdownLayout.astro
-title: Datenschutzerklärung · HeimV – Die Heimverwaltungssoftware
+title: Datenschutzerklärung
 ---
 
 # Datenschutz&shy;erklärung
