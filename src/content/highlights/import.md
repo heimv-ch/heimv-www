@@ -20,6 +20,8 @@ Der Import kann dann über [Buchungen]() » [Neu]() » [Import]() gestartet werd
 
 ## Verfügbare Spalten
 
+<div class='overflow-x-scroll'>
+
 | **Spalte**                    | **Beispiel für Werte** |**Beschreibung** | 
 | ----------------------------- | ---------------------------- | --- |
 | `booking.ref`                 | *B240112abc*                 |  Referenznummer für die Importierte Buchung | 
@@ -51,3 +53,5 @@ Der Import kann dann über [Buchungen]() » [Neu]() » [Import]() gestartet werd
 | `tenant.address_addon`        | | Adresszusatz des Mieters (optional) |
 | `booking_question.*`          | | Antworten zu den zustätzlichen Angaben |
 | `usage.*`                     | | Verbrauch zu den Tarifen |
+
+</div>
