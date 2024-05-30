@@ -12,21 +12,21 @@ import Breadcrumbs from "../../components/breadcrumbs.astro";
 // import screenProcessesImage from "../../assets/screen-processes.png";
 // import screenTenantImage from "../../assets/screen-tenant.png";
 
-const features = await getCollection("features");
+const highlights = await getCollection("highlights");
 ---
 
-<Layout title="Features · HeimV – Die Heimverwaltungssoftware">
+<Layout title="Highlights">
   <div class="py-6 px-4 container max-w-5xl mx-auto">
-    <Breadcrumbs links={[{ title: "Highlights", href: "/features" }]} />
+    <Breadcrumbs links={[{ title: "Highlights", href: "/highlights" }]} />
   </div>
   <main class="container mx-auto max-w-5xl p-4 min-h-screen">
     <h1 class="font-heading text-[clamp(4vw,8vw,3rem)] leading-snug text-center font-bold mx-5 my-[4em]">Highlights</h1>
     <ul class="list-disc ps-6">
       {
-        features.map((feature) => {
+        highlights.map((feature) => {
           return (
             <li class="pb-4">
-              <a class="block" href={`/features/${feature.slug}`}>
+              <a class="block" href={`/highlights/${feature.slug}`}>
                 <h3 class="mt-0 font-bold underline text-heimv-700 hover:text-heimv-600">{feature.data.title}</h3>
                 <p>{feature.data.lead}</p>
               </a>
@@ -34,10 +34,7 @@ const features = await getCollection("features");
           );
         })
       }
-      <!-- 
-  </main>
-</Layout>
--->
     </ul>
+    <p class="my-5">Und noch Vieles mehr!</p>
   </main>
 </Layout>
