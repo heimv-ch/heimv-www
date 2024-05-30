@@ -9,7 +9,7 @@ const { frontmatter } = Astro.props;
   <div class="py-6 px-4 container max-w-5xl mx-auto">
     <Breadcrumbs links={[{ title: frontmatter.title, href: frontmatter.slug }]} />
   </div>
-  <main class="container mx-auto max-w-3xl p-4 mb-8 min-h-screen">
+  <main class="container mx-auto max-w-5xl p-4 mb-8 min-h-screen">
     <div class="bg-heimv-50 rounded-md shadow p-10">
       <Markdown>
         <slot />
