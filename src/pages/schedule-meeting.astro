@@ -1,0 +1,23 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../layouts/Layout.astro";
+import Breadcrumbs from "../components/breadcrumbs.astro";
+---
+
+<Layout title="Termin vereinbaren">
+  <div class="py-6 px-4 container max-w-5xl mx-auto">
+    <Breadcrumbs links={[{ title: "Termin vereinbaren", href: "/schedule-meeting" }]} />
+  </div>
+  <main class="container mx-auto max-w-5xl p-4 min-h-screen">
+    <h1 class="text-6xl font-heading mb-5 mt-3 break-words">Termin vereinbaren</h1>
+    <p class="mb-5">Buche jetzt einen Termin für einen Austausch mit Filou:</p>
+    <!-- Google Calendar Appointment Scheduling begin -->
+    <iframe
+      src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3k_Z4F_0xhWd0G29Q_2Zssekivq8wc9-7OmeJHhYrygTLPQJcIeNiT0UGf5v4AmXJ56jxi1khz?gv=true"
+      style="border: 0"
+      width="100%"
+      height="700"
+      frameborder="0"></iframe>
+    <!-- end Google Calendar Appointment Scheduling -->
+  </main>
+</Layout>
