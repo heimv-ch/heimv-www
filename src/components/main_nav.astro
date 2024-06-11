@@ -8,14 +8,16 @@ export interface Props {
 const { transparent = false } = Astro.props;
 ---
 
-<header class:list={["p-4 text-lg text-heimv-900", { "bg-heimv-400": !transparent }]}>
-  <nav class="container mx-auto max-w-5xl flex justify-between items-center">
+<header class:list={["p-4 text-lg text-heimv-900 font-heading ", { "bg-heimv-400": !transparent }]}>
+  <nav
+    class:list={["container mx-auto max-w-5xl flex justify-between items-center", { "text-heimv-50": !transparent }]}
+  >
     <a href="/"><img src={logo.src} alt="HeimV Logo" width={150} height={48} /></a>
     <ul class="list-none flex gap-2">
       <li>
         <a
           class="p-3 ms-4 grow-0 drop-shadow whitespace-nowrap hover:text-heimv-50 no-underline hover:underline"
-          href="/highlights">Highlights</a
+          href="/highlights">💡 Highlights</a
         >
       </li>
       <li>

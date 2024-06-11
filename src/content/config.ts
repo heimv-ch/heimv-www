@@ -6,6 +6,7 @@ const highlights = defineCollection({
 		title: z.string(),
 		lead: z.string().optional(),
 		image: image().optional(),
+		homepage: z.boolean().optional(),
 		tags: z.array(z.string()).optional()
 	}),
 });

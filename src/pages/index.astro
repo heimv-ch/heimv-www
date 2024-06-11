@@ -2,6 +2,9 @@
 import Layout from "../layouts/Layout.astro";
 import screenHomeImage from "../assets/screen-home.png";
 import screensImage from "../assets/screens.png";
+import { getCollection } from "astro:content";
+
+const highlights = await getCollection("highlights");
 ---
 
 <Layout title="HeimV – Die Heimverwaltungssoftware" transparent={true}>
@@ -46,32 +49,33 @@ import screensImage from "../assets/screens.png";
 
   <section class="container mx-auto max-w-5xl p-5">
     <h2 class="text-4xl mt-10 mb-5 font-heading" id="highlights">Die Highlights</h2>
-    <ul class="list-disc ps-6">
-      <li class="pb-3">
-        <a class="underline text-heimv-700 hover:text-heimv-600" href="highlights/requests"
-          >Reservationsanfragen verwalten</a
-        >
-      </li>
-      <li class="pb-3">Verträge und Anzahlungen erstellen</li>
-      <li class="pb-3">
-        <a class="" href="highlights/tarifs">Tarife für Buchungen festlegen</a>
-      </li>
-      <li class="pb-3">Verbrauch abrechnen</li>
-      <li class="pb-3">
-        <a class="" href="highlights/invoices">Rechnungen versenden</a>
-      </li>
-      <li class="pb-3">Zahlungen via ESR-Standard einlesen und verwalten</li>
-      <li class="pb-3">
-        <a class="underline text-heimv-700 hover:text-heimv-600" href="highlights">Alle Highlights in der Übersicht</a>
-      </li>
-    </ul>
     <a href="/highlights">
       <figure>
         <!-- <img src={screensImage.src} alt="" width={1200} height={886} /> -->
         <img class="my-10 mx-auto" src={screensImage.src} alt="" width={800} height={590} />
       </figure></a
     >
-    <p class="my-10 text-center">bequem über den Browser.</p>
+    <ul class="list-disc ps-6">
+      {
+        highlights.map((highlight) => {
+          if (!highlight.data.homepage) return;
+
+          return (
+            <li class="pb-4">
+              <a class="block" href={`/highlights/${highlight.slug}`}>
+                <h3 class="mt-0 font-bold underline text-heimv-700 hover:text-heimv-600">{highlight.data.title}</h3>
+                <p>{highlight.data.lead}</p>
+              </a>
+            </li>
+          );
+        })
+      }
+    </ul>
+    <p class="my-10">
+      Alles bequem über den Browser. <a class="underline text-heimv-700 hover:text-heimv-600" href="highlights"
+        >Alle Highlights in der Übersicht</a
+      >
+    </p>
   </section>
 
   <section class="container mx-auto max-w-5xl p-4">

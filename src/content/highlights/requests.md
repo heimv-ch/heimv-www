@@ -1,7 +1,8 @@
 ---
 title: Reservationsanfragen
-lead: Reservationsanfragen automatisiert verwalten
+lead: Reservationsanfragen einfach und automatisiert verwalten
 image: ../../assets/screen-book-1.png
+homepage: true
 ---
 
 
