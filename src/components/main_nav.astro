@@ -1,5 +1,6 @@
 ---
 import logo from "../assets/logo.svg";
+import logoIcon from "../assets/logo_icon.svg";
 
 export interface Props {
   transparent?: boolean;
@@ -12,24 +13,28 @@ const { transparent = false } = Astro.props;
   <nav
     class:list={["container mx-auto max-w-5xl flex justify-between items-center", { "text-heimv-50": !transparent }]}
   >
-    <a href="/"><img src={logo.src} alt="HeimV Logo" width={150} height={48} /></a>
-    <ul class="list-none flex gap-2">
+    <a href="/">
+      <picture>
+        <source srcset={logoIcon.src} media="(max-width: 500px)" width={150} height={150} />
+        <source srcset={logo.src} media="(min-width: 500px)" width={150} height={48} />
+        <img src={logo.src} alt="HeimV Logo" width={150} height={48} />
+      </picture>
+    </a>
+    <ul class="list-none flex md:gap-10 sm:gap-5">
       <li>
-        <a
-          class="p-3 ms-4 grow-0 drop-shadow whitespace-nowrap hover:text-heimv-50 no-underline hover:underline"
-          href="/highlights">💡 Highlights</a
+        <a class="p-3 grow-0 drop-shadow whitespace-nowrap hover:text-heimv-50 no-underline" href="/highlights"
+          >💡 Highlights</a
         >
       </li>
       <li>
         <a
-          class="p-3 ms-4 grow-0 drop-shadow whitespace-nowrap hover:text-heimv-50 no-underline hover:underline"
+          class="p-3 grow-0 drop-shadow whitespace-nowrap hover:text-heimv-50 no-underline"
           href="https://github.com/diegosteiner/heimv">Code</a
         >
       </li>
       <li>
-        <a
-          class="p-3 ms-4 grow-0 drop-shadow whitespace-nowrap hover:text-heimv-50 no-underline hover:underline"
-          href="https://app.heimv.ch">Login</a
+        <a class="p-3 grow-0 drop-shadow whitespace-nowrap hover:text-heimv-50 no-underline" href="https://app.heimv.ch"
+          >Login</a
         >
       </li>
     </ul>
