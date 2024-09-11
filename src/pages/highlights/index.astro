@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import Breadcrumbs from "../../components/breadcrumbs.astro";
+import Search from "astro-pagefind/components/Search";
 // import screenBook1Image from "../../assets/screen-book-1.png";
 // import screenBook2Image from "../../assets/screen-book-2.png";
 // import screenBookingsImage from "../../assets/screen-bookings.png";
@@ -19,16 +20,19 @@ const highlights = await getCollection("highlights");
     <Breadcrumbs links={[{ title: "Highlights", href: "/highlights" }]} />
   </div>
   <main class="container mx-auto max-w-5xl p-4 min-h-screen">
-    <h1 class="font-heading text-[clamp(4vw,8vw,3rem)] leading-snug text-center font-bold mx-5 my-[4em]">
+    <h1 class="font-heading text-[clamp(4vw,8vw,3rem)] leading-snug text-center font-bold mx-5 my-[3em]">
       💡 Highlights
     </h1>
+    <Search id="search" className="py-10" uiOptions={{ showImages: false }} />
     <ul class="list-disc ps-6">
       {
         highlights.map((highlight) => {
           return (
-            <li class="pb-4">
+            <li class="pb-8">
               <a class="block" href={`/highlights/${highlight.slug}`}>
-                <h3 class="mt-0 font-bold underline text-heimv-700 hover:text-heimv-600">{highlight.data.title}</h3>
+                <h3 class="mt-0 mb-1 font-bold underline text-heimv-700 hover:text-heimv-600">
+                  {highlight.data.title}
+                </h3>
                 <p>{highlight.data.lead}</p>
               </a>
             </li>
