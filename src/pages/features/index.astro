@@ -12,28 +12,37 @@ import Search from "astro-pagefind/components/Search";
 // import screenProcessesImage from "../../assets/screen-processes.png";
 // import screenTenantImage from "../../assets/screen-tenant.png";
 
-const highlights = await getCollection("highlights");
+const features = await getCollection("features");
 ---
 
-<Layout title="Highlights">
+<Layout title="Features">
   <div class="py-6 px-4 container max-w-5xl mx-auto">
-    <Breadcrumbs links={[{ title: "Highlights", href: "/highlights" }]} />
+    <Breadcrumbs links={[{ title: "features", href: "/features" }]} />
   </div>
   <main class="container mx-auto max-w-5xl p-4 min-h-screen">
-    <h1 class="font-heading text-[clamp(4vw,8vw,3rem)] leading-snug text-center font-bold mx-5 my-[3em]">
-      💡 Highlights
-    </h1>
+    <div class="grid place-items-center h-96">
+      <h1
+        class="font-heading text-[clamp(4vw,0.5rem+5vw,3rem)] leading-snug font-bold row-start-1 row-end-1 col-start-1 col-end-1 z-10"
+      >
+        Feature Spotlight
+      </h1>
+
+      <span
+        class="text-9xl opacity-40 row-start-1 row-end-1 col-start-1 col-end-1"
+        >💡</span
+      >
+    </div>
     <Search id="search" className="py-10" uiOptions={{ showImages: false }} />
     <ul class="list-disc ps-6">
       {
-        highlights.map((highlight) => {
+        features.map((feature) => {
           return (
             <li class="pb-8">
-              <a class="block" href={`/highlights/${highlight.slug}`}>
+              <a class="block" href={`/features/${feature.id}`}>
                 <h3 class="mt-0 mb-1 font-bold underline text-heimv-700 hover:text-heimv-600">
-                  {highlight.data.title}
+                  {feature.data.title}
                 </h3>
-                <p>{highlight.data.lead}</p>
+                <p>{feature.data.lead}</p>
               </a>
             </li>
           );

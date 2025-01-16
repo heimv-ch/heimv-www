@@ -1,7 +1,8 @@
 import { defineCollection, z } from 'astro:content';
+import { glob  } from 'astro/loaders';
 
-const highlights = defineCollection({
-	type: 'content',
+const features = defineCollection({
+	loader: glob({ pattern: '**/[^_]*.{md,mdx}', base: './src/content/features' }),
 	schema: ({ image }) => z.object({
 		title: z.string(),
 		lead: z.string().optional(),
@@ -11,4 +12,4 @@ const highlights = defineCollection({
 	}),
 });
 
-export const collections = { highlights };
+export const collections = { features };

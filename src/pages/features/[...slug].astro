@@ -1,21 +1,21 @@
 ---
-import { type CollectionEntry, getCollection } from "astro:content";
+import { type CollectionEntry, getCollection, render } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import { Image } from "astro:assets";
 import Markdown from "../../layouts/Markdown.astro";
 import Breadcrumbs from "../../components/breadcrumbs.astro";
 
 export async function getStaticPaths() {
-  const highlights = await getCollection("highlights");
-  return highlights.map((feature) => ({
-    params: { slug: feature.slug },
+  const features = await getCollection("features");
+  return features.map((feature) => ({
+    params: { id: feature.id },
     props: { ...feature },
   }));
 }
-type Props = CollectionEntry<"highlights">;
+type Props = CollectionEntry<"features">;
 
 const feature = Astro.props;
-const { Content } = await feature.render();
+const { Content } = await render(feature);
 const { title, lead, image } = feature.data;
 ---
 
@@ -23,8 +23,8 @@ const { title, lead, image } = feature.data;
   <div class="py-6 px-4 container max-w-5xl mx-auto">
     <Breadcrumbs
       links={[
-        { title: "Highlights", href: "/highlights" },
-        { title, href: feature.slug },
+        { title: "features", href: "/features" },
+        { title, href: feature.id },
       ]}
     />
   </div>

@@ -4,21 +4,30 @@ import screenHomeImage from "../assets/screen-home.png";
 import screensImage from "../assets/screens.png";
 import { getCollection } from "astro:content";
 
-const highlights = await getCollection("highlights");
+const features = await getCollection("features");
 ---
 
 <Layout title="HeimV – Die Heimverwaltungssoftware" transparent={true}>
-  <section class="container mx-auto max-w-5xl p-4 h-[80vh] flex flex-col justify-center align-center relative">
-    <h1 class="text-heimv-50 font-heading text-[clamp(4vw,8vw,3rem)] leading-snug text-center font-bold mx-5 mb-10">
-      <span class="text-heimv-700">Das Verwaltungs&shy;werkzeug</span><br />für Pfadi- und Gruppen&shy;häuser
+  <section
+    class="container mx-auto max-w-5xl p-4 h-[80vh] flex flex-col justify-center align-center relative"
+  >
+    <h1
+      class="text-heimv-50 font-heading text-[clamp(4vw,8vw,3rem)] leading-snug text-center font-bold mx-5 mb-10"
+    >
+      <span class="text-heimv-700">Das Verwaltungs&shy;werkzeug</span><br />für
+      Pfadi- und Gruppen&shy;häuser
     </h1>
     <div id="hero-image" class="absolute top-[90%] w-full left-0">
       <img src={screenHomeImage.src} alt="HeimV" width={1542} height={1138} />
     </div>
   </section>
 
-  <section class="container mx-auto max-w-5xl p-4 h-screen flex flex-col justify-center align-center">
-    <h1 class="font-heading text-[clamp(4vw,8vw,3rem)] leading-snug text-heimv-900 text-center font-bold mx-5 my-[4em]">
+  <section
+    class="container mx-auto max-w-5xl p-4 h-screen flex flex-col justify-center align-center"
+  >
+    <h1
+      class="font-heading text-[clamp(4vw,8vw,3rem)] leading-snug text-heimv-900 text-center font-bold mx-5 my-[4em]"
+    >
       Reservations&shy;verwaltung<br />von
       <strong class="text-[1.5em] text-effect-gradient">A</strong>nfrage bis
       <strong class="text-[1.5em] text-effect-gradient">Z</strong>ahlung
@@ -29,42 +38,61 @@ const highlights = await getCollection("highlights");
     <h2 class="text-4xl mt-10 mb-5 font-heading">Die Vorteile</h2>
     <ul>
       <li class="pb-5">
-        <span class="font-bold text-heimv-700 font-heading me-1 text-2xl">HeimV</span> vereinfacht die Verwaltung von Reservationen
-        und spart damit Zeit, Geld und Nerven.
+        <span class="font-bold text-heimv-700 font-heading me-1 text-2xl"
+          >HeimV</span
+        > vereinfacht die Verwaltung von Reservationen und spart damit Zeit, Geld
+        und Nerven.
       </li>
       <li class="pb-5">
-        <span class="font-bold text-heimv-700 font-heading me-1 text-2xl">HeimV</span> ist genau auf die Bedürfnisse von
-        Schweizer Pfadiheimen und Gruppenhäusern zugeschnitten.
+        <span class="font-bold text-heimv-700 font-heading me-1 text-2xl"
+          >HeimV</span
+        > ist genau auf die Bedürfnisse von Schweizer Pfadiheimen und Gruppenhäusern
+        zugeschnitten.
       </li>
       <li class="pb-5">
-        <span class="font-bold text-heimv-700 font-heading me-1 text-2xl">HeimV</span> bietet alles wichtige aus einer Hand:
-        <a href="#highlights" class="text-heimv-700 underline hover:text-heimv-600">Highlights</a>
+        <span class="font-bold text-heimv-700 font-heading me-1 text-2xl"
+          >HeimV</span
+        > bietet alles wichtige aus einer Hand:
+        <a
+          href="#features"
+          class="text-heimv-700 underline hover:text-heimv-600">features</a
+        >
       </li>
       <li class="pb-5">
-        <span class="font-bold text-heimv-700 font-heading me-1 text-2xl">HeimV</span> wird in der Schweiz entwickelt und
-        betrieben. Alle Daten sind auf Servern in der Schweiz.
+        <span class="font-bold text-heimv-700 font-heading me-1 text-2xl"
+          >HeimV</span
+        > wird in der Schweiz entwickelt und betrieben. Alle Daten sind auf Servern
+        in der Schweiz.
       </li>
     </ul>
   </section>
 
   <section class="container mx-auto max-w-5xl p-5">
-    <h2 class="text-4xl mt-10 mb-5 font-heading" id="highlights">Die Highlights</h2>
-    <a href="/highlights">
+    <h2 class="text-4xl mt-10 mb-5 font-heading" id="features">Die features</h2>
+    <a href="/features">
       <figure>
         <!-- <img src={screensImage.src} alt="" width={1200} height={886} /> -->
-        <img class="my-10 mx-auto" src={screensImage.src} alt="" width={800} height={590} />
+        <img
+          class="my-10 mx-auto"
+          src={screensImage.src}
+          alt=""
+          width={800}
+          height={590}
+        />
       </figure></a
     >
     <ul class="list-disc ps-6">
       {
-        highlights.map((highlight) => {
-          if (!highlight.data.homepage) return;
+        features.map((feature) => {
+          if (!feature.data.homepage) return;
 
           return (
             <li class="pb-4">
-              <a class="block" href={`/highlights/${highlight.slug}`}>
-                <h3 class="mt-0 font-bold underline text-heimv-700 hover:text-heimv-600">{highlight.data.title}</h3>
-                <p>{highlight.data.lead}</p>
+              <a class="block" href={`/features/${feature.id}`}>
+                <h3 class="mt-0 font-bold underline text-heimv-700 hover:text-heimv-600">
+                  {feature.data.title}
+                </h3>
+                <p>{feature.data.lead}</p>
               </a>
             </li>
           );
@@ -72,23 +100,26 @@ const highlights = await getCollection("highlights");
       }
     </ul>
     <p class="my-10">
-      Alles bequem über den Browser. <a class="underline text-heimv-700 hover:text-heimv-600" href="highlights"
-        >Alle Highlights in der Übersicht</a
+      Alles bequem über den Browser. <a
+        class="underline text-heimv-700 hover:text-heimv-600"
+        href="features">Alle features in der Übersicht</a
       >
     </p>
   </section>
 
   <section class="container mx-auto max-w-5xl p-4">
-    <h2 class="text-4xl mt-10 mb-5 font-heading" id="highlights">Die Story</h2>
+    <h2 class="text-4xl mt-10 mb-5 font-heading" id="features">Die Story</h2>
     <p class="mb-5">
-      HeimV wurde als Werkzeug für den gesamten Buchungs- und Abrechnungsprozess für die Heime des<a
-        href="https://pfadi-heime.ch">Vereins Pfadiheime St. Georg</a
+      HeimV wurde als Werkzeug für den gesamten Buchungs- und Abrechnungsprozess
+      für die Heime des<a href="https://pfadi-heime.ch"
+        >Vereins Pfadiheime St. Georg</a
       > konzipiert und 2019 umgesetzt.
     </p>
     <p class="mb-5">
       2020 kamen weitere Heimvereine dazu. Seit 2021 wird HeimV von der &nbsp;<a
         class="underline text-heimv-700 hover:text-heimv-600"
-        href="https://stiftung-pfadiheime.ch/">Stiftung Pfadiheime Schweiz unterstützt</a
+        href="https://stiftung-pfadiheime.ch/"
+        >Stiftung Pfadiheime Schweiz unterstützt</a
       >.
     </p>
     <p class="mb-5">
@@ -99,12 +130,18 @@ const highlights = await getCollection("highlights");
     </p>
   </section>
   <section class="container mx-auto max-w-5xl p-4">
-    <div class="rounded-lg bg-circle p-10 text-xl text-heimv-50 my-[20vh] h-[40vh] flex flex-col justify-center">
-      <h2 class="mb-8 text-4xl font-heading text-center">Demonstration gefällig?</h2>
+    <div
+      class="rounded-lg bg-circle p-10 text-xl text-heimv-50 my-[20vh] h-[40vh] flex flex-col justify-center"
+    >
+      <h2 class="mb-8 text-4xl font-heading text-center">
+        Demonstration gefällig?
+      </h2>
       <p class="text-center">
         Möchtet ihr HeimV unverbindlich ausprobieren?
 
-        <a class="underline hover:text-heimv-600" href="mailto:info@heimv.ch">Demozugang jetzt bei Filou beantragen</a>
+        <a class="underline hover:text-heimv-600" href="mailto:info@heimv.ch"
+          >Demozugang jetzt bei Filou beantragen</a
+        >
       </p>
     </div>
   </section>
@@ -116,11 +153,19 @@ const highlights = await getCollection("highlights");
   }
 
   .bg-circle {
-    background: radial-gradient(107% 107% at 50% -7%, rgba(75, 75, 148, 0) 0%, #59599e 60%);
+    background: radial-gradient(
+      107% 107% at 50% -7%,
+      rgba(75, 75, 148, 0) 0%,
+      #59599e 60%
+    );
   }
 
   .text-effect-gradient {
-    background: linear-gradient(135deg, theme("colors.heimv.200"), theme("colors.heimv.600"));
+    background: linear-gradient(
+      135deg,
+      theme("colors.heimv.200"),
+      theme("colors.heimv.600")
+    );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
