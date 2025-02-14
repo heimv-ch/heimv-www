@@ -10,7 +10,13 @@ const { transparent = false } = Astro.props;
 ---
 
 <header
-  class:list={["p-4 text-lg text-heimv-900 ", { "bg-heimv-400": !transparent }]}
+  class:list={[
+    "p-4 text-lg  text-heimv-50",
+    {
+      "bg-heimv-400": !transparent,
+      "drop-shadow shadow-heimv-800": transparent,
+    },
+  ]}
 >
   <nav
     class:list={[
@@ -38,19 +44,20 @@ const { transparent = false } = Astro.props;
     <ul class="list-none flex md:gap-10 sm:gap-5 text-xl font-bold uppercase">
       <li>
         <a
-          class="p-3 grow-0 drop-shadow whitespace-nowrap hover:text-heimv-50 no-underline"
+          class="p-3 grow-0 whitespace-nowrap hover:text-heimv-50 no-underline"
+          ,
           href="/features">💡 Features</a
         >
       </li>
       <li>
         <a
-          class="p-3 grow-0 drop-shadow whitespace-nowrap hover:text-heimv-50 no-underline"
+          class="p-3 grow-0 whitespace-nowrap hover:text-heimv-50 no-underline"
           href="https://github.com/diegosteiner/heimv">Code</a
         >
       </li>
       <li>
         <a
-          class="p-3 grow-0 drop-shadow whitespace-nowrap hover:text-heimv-50 no-underline"
+          class="p-3 grow-0 whitespace-nowrap hover:text-heimv-50 no-underline"
           href="https://app.heimv.ch">Login</a
         >
       </li>
