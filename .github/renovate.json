@@ -1,0 +1,14 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended"
+  ],
+  "schedule": [
+    "every weekend"
+  ],
+  "automerge": true,
+  "automergeType": "branch",
+  "failOnStatusErrors": true,
+  "prCreation": "not-pending",
+  "branchPrefix": "renovate/"
+}
