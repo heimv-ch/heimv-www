@@ -7,6 +7,7 @@ import Breadcrumbs from "../../components/breadcrumbs.astro";
 
 export async function getStaticPaths() {
   const features = await getCollection("features");
+  console.log(features);
   return features.map((feature) => ({
     params: { id: feature.id },
     props: { ...feature },
