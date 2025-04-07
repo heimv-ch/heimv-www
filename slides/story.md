@@ -10,7 +10,7 @@ _class: lead
     --color-background: rgb(240 240 250);
     --color-foreground: #333;
     --color-highlight: rgb(89 89 158);
-    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 
   section {
@@ -36,7 +36,7 @@ _class: lead
 
 ---
 
-# Die Person
+# Der Entwickler
 
 ![center w:240px](../public/diego_steiner.jpg)
 
@@ -47,9 +47,9 @@ Diego Steiner / Filou
 
 ---
 
-# Die Person
+# Der Entwickler
 
-Ämtli
+aktuelle Pfadiämtli:
 
 - Mitglied des Stiftungsrates der Stiftung Pfadiheime Schweiz
 - Betreuung des Pfadiheim-Verzeichnisses
@@ -74,8 +74,9 @@ Diego Steiner / Filou
 
 - 200 bis 300 Buchungen / Jahr 
 - Teilzeitstelle für die Verwaltung
+- Angestellte Heimwärte vor Ort
 
-Neu:
+Neu 4. Heim:
 
 - Haselhaus (Biberstein AG)
 
@@ -87,7 +88,7 @@ Bisher:
 
 - Webseite für Anfragen und Belegungsplan (PHP & MySQL)
 - Datenbank für Vertrag und Rechnungswesen (Access)
-- Buchhalung mit Babana
+- Buchhalung mit Banana
 
 ---
 
@@ -101,9 +102,9 @@ Bisher:
 
 --- 
 
-# Die Suche 
+# Die Suche nach bestehenden Lösungen 
 
-Software auf dem Markt:
+bestehenden Software auf dem Markt:
 
 - Angebot meist beschränkt auf Hotel und FeWo
 - Kosten teilweise ins unbezahlbare
@@ -112,12 +113,12 @@ Software auf dem Markt:
 
 --- 
 
-# Die Gefährten 
+# Die Vorstandsgruppe 
 
 Aus dem Vorstand bildete sich eine Gruppe, die sich dem Problem annehmen wollte
 
 - *Smily*: Konzept und Hauptkunde
-- *Murmel*: Konzept
+- *Müme*: Konzept und Visionär
 - *Oktopus*: Tester und Hinterfrager
 - *Filou*: Entwicklung
 
@@ -159,11 +160,10 @@ Fazit:
 
 ---
 
-# Die Übernahme
+# Die Stiftung
 
-- Die Stiftung Pfadiheime bekam rasch Wind von der Sache
-- Schirmherrschaft der Software ging über, um sie möglichst vielen Pfadiheimen einfach 
-  zugänglich zu machen
+- Bei der Stiftung Pfadiheime Schweiz stiess das Projekt auf grosses Interesse
+- 2021 ging die Software in die Schirmherrschaft der Stiftung über, um sie möglichst vielen Pfadiheimen einfach zugänglich zu machen
 - Projekt zur Finanzierung bei der Pfadistiftung bewilligt 
 
 --- 
@@ -172,8 +172,12 @@ Fazit:
 
 Heute hat HeimV:
 
-- 35 Vereine und 60 Heime 
-- Über 6'000 abgewickelte Buchungen  
+- **> 35 Vereine und 60 Heime**, darunter auch Mitglieder der KBPH:
+  - Genossenschaft Pfadfinderheime Kyburg Thun
+  - Pfadi Wendelsee
+  - Pfadi Burgdorf
+  - Pfadi Chutze
+- Über 6'000 abgewickelte Buchungen
 
 --- 
 
@@ -184,7 +188,7 @@ Heute hat HeimV:
 - Heimübergabe und Rücknahme flexibel delegieren
 - Reservationsanfragen einfach und automatisiert verwalten
 - Preisstuktur flexibel abbilden und abrechnen
-- Buchungsdaten einfach exportieren
+- Buchungsdaten als Auszüge einfach exportieren
 - ...
 
 ---
@@ -193,9 +197,12 @@ Heute hat HeimV:
 
 - Fr. 30.- pro und Monat
 - **Für Pfadiheime: Fr. 20.- pro Monat**
+- Self-Hosting möglich
 
 ---
 
-# Der Ausblick 
+# Der Ausblick
 
-- Fragen im Workshop
+Bei Interesse an einem Gespräch oder einer Demo:
+
+[www.heimv.ch](https://www.heimv.ch) oder E-Mail an [info@heimv.ch](mailto:info@heimv.ch)
