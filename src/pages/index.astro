@@ -1,8 +1,8 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import { getCollection } from "astro:content";
 import screenHomeImage from "../assets/screen-home.png";
 import screensImage from "../assets/screens.png";
-import { getCollection } from "astro:content";
+import Layout from "../layouts/Layout.astro";
 
 const features = await getCollection("features");
 ---
@@ -169,8 +169,8 @@ const features = await getCollection("features");
   .text-effect-gradient {
     background: linear-gradient(
       135deg,
-      theme("colors.heimv.200"),
-      theme("colors.heimv.600")
+      var(--color-heimv-200),
+      var(--color-heimv-600)
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

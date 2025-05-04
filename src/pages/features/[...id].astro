@@ -1,9 +1,9 @@
 ---
-import { type CollectionEntry, getCollection, render } from "astro:content";
-import Layout from "../../layouts/Layout.astro";
 import { Image } from "astro:assets";
-import Markdown from "../../layouts/Markdown.astro";
+import { type CollectionEntry, getCollection, render } from "astro:content";
 import Breadcrumbs from "../../components/breadcrumbs.astro";
+import Layout from "../../layouts/Layout.astro";
+import Markdown from "../../layouts/Markdown.astro";
 
 export async function getStaticPaths() {
   const features = await getCollection("features");

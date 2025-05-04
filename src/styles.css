@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --color-heimv-50: #fbfbfe;
+  --color-heimv-100: #f0f0fa;
+  --color-heimv-200: #d5d5f1;
+  --color-heimv-300: #bebee9;
+  --color-heimv-400: #a7a7e2;
+  --color-heimv-500: #8c8cd9;
+  --color-heimv-600: #7575d1;
+  --color-heimv-700: #59599e;
+  --color-heimv-800: #3939ac;
+  --color-heimv-900: #2e2e52;
+  --color-heimv-950: #29297a;
+  --font-heading: "Patua One", "sans-serif";
+
+  /* light: '#d4d4e9',
+dark: '#59599e',
+primary: '#7575d1',
+white: '#fafafb',
+body: '#f3f3fb',
+black: '#2e2e52' */
+}
