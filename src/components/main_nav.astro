@@ -20,8 +20,8 @@ const { transparent = false } = Astro.props;
 >
   <nav
     class:list={[
-      "container mx-auto max-w-5xl flex justify-between items-center",
-      { "text-heimv-50": !transparent },
+      "container mx-auto max-w-5xl flex justify-between items-center font-heading",
+      { "text-heimv-50": !transparent, "text-slate-700": transparent },
     ]}
   >
     <a href="/">
@@ -52,6 +52,12 @@ const { transparent = false } = Astro.props;
       <li>
         <a
           class="p-3 grow-0 whitespace-nowrap hover:text-heimv-50 no-underline"
+          href="/articles">Dokumentation</a
+        >
+      </li>
+      <li>
+        <a
+          class="p-3 grow-0 whitespace-nowrap hover:text-heimv-50 no-underline"
           href="https://github.com/diegosteiner/heimv">Code</a
         >
       </li>
@@ -62,5 +68,16 @@ const { transparent = false } = Astro.props;
         >
       </li>
     </ul>
+    <!-- <svg
+      class="absolute left-0 w-full h-auto pointer-events-none"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 800 600"
+      fill="none"
+    >
+      <path
+        d="M400 0C500 50 600 150 700 250C800 350 700 450 600 500C500 550 400 500 300 450C200 400 100 300 50 200C0 100 300 -50 400 0Z"
+        fill="#a7a7e2"
+      />
+    </svg> -->
   </nav>
 </header>

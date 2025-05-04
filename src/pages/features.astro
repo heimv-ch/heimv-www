@@ -1,8 +1,7 @@
 ---
 import { getCollection } from "astro:content";
-import Search from "astro-pagefind/components/Search";
-import Breadcrumbs from "../../components/breadcrumbs.astro";
-import Layout from "../../layouts/Layout.astro";
+import Breadcrumbs from "../components/breadcrumbs.astro";
+import Layout from "../layouts/Layout.astro";
 // import screenBook1Image from "../../assets/screen-book-1.png";
 // import screenBook2Image from "../../assets/screen-book-2.png";
 // import screenBookingsImage from "../../assets/screen-bookings.png";
@@ -12,12 +11,12 @@ import Layout from "../../layouts/Layout.astro";
 // import screenProcessesImage from "../../assets/screen-processes.png";
 // import screenTenantImage from "../../assets/screen-tenant.png";
 
-const features = await getCollection("features");
+const articles = (await getCollection("articles")).filter((article) => article.data.featured);
 ---
 
 <Layout title="Features">
   <div class="py-6 px-4 container max-w-5xl mx-auto">
-    <Breadcrumbs links={[{ title: "features", href: "/features" }]} />
+    <Breadcrumbs links={[{ title: "Features", href: "/features" }]} />
   </div>
   <main class="container mx-auto max-w-5xl p-4 min-h-screen">
     <div class="grid place-items-center h-96">
@@ -32,13 +31,12 @@ const features = await getCollection("features");
         >💡</span
       >
     </div>
-    <Search id="search" className="py-10" uiOptions={{ showImages: false }} />
     <ul class="list-disc ps-6">
       {
-        features.map((feature) => {
+        articles.map((feature) => {
           return (
             <li class="pb-8">
-              <a class="block" href={`/features/${feature.id}`}>
+              <a class="block" href={`/articles/${feature.id}`}>
                 <h3 class="mt-0 mb-1 font-bold underline text-heimv-700 hover:text-heimv-600">
                   {feature.data.title}
                 </h3>

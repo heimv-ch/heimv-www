@@ -1,9 +1,10 @@
 ---
 title: Buchungsdaten Import
 lead: Buchungsdaten bequem in HeimV übernehmen
+featured: true
 ---
 
-![](/features/booking-import.png)
+![](/articles/booking-import.png)
 
 Daten von bestehenden Buchungen können in HeimV übernommen werden. Dazu kann man die 
 [CSV-Vorlage herunterladen](/booking_import_template.csv) und mit den Daten befüllen. Siehe Details unter [Verfügbare Spalten](#verfügbare-spalten).

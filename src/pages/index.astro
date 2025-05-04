@@ -4,7 +4,7 @@ import screenHomeImage from "../assets/screen-home.png";
 import screensImage from "../assets/screens.png";
 import Layout from "../layouts/Layout.astro";
 
-const features = await getCollection("features");
+const articles = await getCollection("articles");
 ---
 
 <Layout title="HeimV – Die Heimverwaltungssoftware" transparent={true}>
@@ -54,7 +54,7 @@ const features = await getCollection("features");
           >HeimV</span
         > bietet alles wichtige aus einer Hand:
         <a
-          href="#features"
+          href="#articles"
           class="text-heimv-700 underline hover:text-heimv-600">alle Features</a
         >
       </li>
@@ -71,7 +71,7 @@ const features = await getCollection("features");
     <h2 class="text-4xl mt-10 mb-5 font-heading" id="hightlights">
       Die Highlights
     </h2>
-    <a href="/features">
+    <a href="/articles">
       <figure>
         <!-- <img src={screensImage.src} alt="" width={1200} height={886} /> -->
         <img
@@ -85,12 +85,12 @@ const features = await getCollection("features");
     >
     <ul class="list-disc ps-6">
       {
-        features.map((feature) => {
+        articles.map((feature) => {
           if (!feature.data.homepage) return;
 
           return (
             <li class="pb-4">
-              <a class="block" href={`/features/${feature.id}`}>
+              <a class="block" href={`/articles/${feature.id}`}>
                 <h3 class="mt-0 font-bold underline text-heimv-700 hover:text-heimv-600">
                   {feature.data.title}
                 </h3>
@@ -110,7 +110,7 @@ const features = await getCollection("features");
   </section>
 
   <section class="container mx-auto max-w-5xl p-4">
-    <h2 class="text-4xl mt-10 mb-5 font-heading" id="features">Die Story</h2>
+    <h2 class="text-4xl mt-10 mb-5 font-heading" id="articles">Die Story</h2>
     <p class="mb-5">
       HeimV wurde als Werkzeug für den gesamten Buchungs- und Abrechnungsprozess
       für die Heime des <a

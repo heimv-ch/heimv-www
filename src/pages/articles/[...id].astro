@@ -6,26 +6,26 @@ import Layout from "../../layouts/Layout.astro";
 import Markdown from "../../layouts/Markdown.astro";
 
 export async function getStaticPaths() {
-  const features = await getCollection("features");
-  console.log(features);
-  return features.map((feature) => ({
-    params: { id: feature.id },
-    props: { ...feature },
+  const articles = await getCollection("articles");
+  console.log(articles);
+  return articles.map((article) => ({
+    params: { id: article.id },
+    props: { ...article },
   }));
 }
-type Props = CollectionEntry<"features">;
+type Props = CollectionEntry<"articles">;
 
-const feature = Astro.props;
-const { Content } = await render(feature);
-const { title, lead, image } = feature.data;
+const article = Astro.props;
+const { Content } = await render(article);
+const { title, lead, image } = article.data;
 ---
 
 <Layout title={title}>
   <div class="py-6 px-4 container max-w-5xl mx-auto">
     <Breadcrumbs
       links={[
-        { title: "features", href: "/features" },
-        { title, href: feature.id },
+        { title: "articles", href: "/articles" },
+        { title, href: article.id },
       ]}
     />
   </div>

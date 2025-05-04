@@ -1,5 +1,4 @@
 @import "tailwindcss";
-
 @plugin "@tailwindcss/typography";
 
 @theme {
@@ -15,11 +14,4 @@
   --color-heimv-900: #2e2e52;
   --color-heimv-950: #29297a;
   --font-heading: "Patua One", "sans-serif";
-
-  /* light: '#d4d4e9',
-dark: '#59599e',
-primary: '#7575d1',
-white: '#fafafb',
-body: '#f3f3fb',
-black: '#2e2e52' */
 }

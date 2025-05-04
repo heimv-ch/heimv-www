@@ -1,0 +1,46 @@
+---
+import { getCollection } from "astro:content";
+import Search from "astro-pagefind/components/Search";
+import Breadcrumbs from "../../components/breadcrumbs.astro";
+import Layout from "../../layouts/Layout.astro";
+
+const articles = await getCollection("articles");
+---
+
+<Layout title="Artikel">
+  <div class="py-6 px-4 container max-w-5xl mx-auto">
+    <Breadcrumbs links={[{ title: "Articles", href: "/articles" }]} />
+  </div>
+  <main class="container mx-auto max-w-5xl p-4 min-h-screen">
+    <div class="grid place-items-center h-96">
+      <h1
+        class="font-heading text-[clamp(4vw,0.5rem+5vw,3rem)] leading-snug font-bold row-start-1 row-end-1 col-start-1 col-end-1 z-10"
+      >
+        Artikel
+      </h1>
+
+      <span
+        class="text-9xl opacity-40 row-start-1 row-end-1 col-start-1 col-end-1"
+        >💡</span
+      >
+    </div>
+    <Search id="search" className="py-10" uiOptions={{ showImages: false }} />
+    <ul class="list-disc ps-6">
+      {
+        articles.map((article) => {
+          return (
+            <li class="pb-8">
+              <a class="block" href={`/articles/${article.id}`}>
+                <h3 class="mt-0 mb-1 font-bold underline text-heimv-700 hover:text-heimv-600">
+                  {article.data.title}
+                </h3>
+                <p>{article.data.lead}</p>
+              </a>
+            </li>
+          );
+        })
+      }
+    </ul>
+    <p class="my-5">Und noch Vieles mehr!</p>
+  </main>
+</Layout>
