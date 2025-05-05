@@ -14,10 +14,14 @@ const articles = await getCollection("articles");
     <h1
       class="text-heimv-50 font-heading text-[clamp(4vw,8vw,3rem)] leading-snug text-center font-bold mx-5 mb-10"
     >
-      <span class="text-heimv-700">Das Verwaltungs&shy;werkzeug</span><br />für
-      Pfadi- und Gruppen&shy;häuser
+      <div class="text-heimv-700">Das Verwaltungs&shy;werkzeug</div>
+      <div>für Pfadi- und Gruppen&shy;häuser</div>
+      <!-- <div class="text-[0.4em] text-heimv-100 pt-5">von der Stiftung Pfadiheime Schweiz</div> -->
     </h1>
-    <div id="hero-image" class="absolute top-[90%] w-full left-0">
+    <div
+      id="hero-image"
+      class="absolute top-[90%] w-full left-0 transition-transform ease-out duration-100 motion-reduce:transition-none"
+    >
       <img src={screenHomeImage.src} alt="HeimV" width={1542} height={1138} />
     </div>
   </section>
@@ -120,12 +124,13 @@ const articles = await getCollection("articles");
       Einsatz.
     </p>
     <p class="mb-5">
-      2020 kamen erste, weitere Heimvereine dazu. Seit 2021 wird HeimV von der
+      2020 kamen erste, weitere Heimvereine dazu. Seit 2021 steht HeimV unter
+      der Schirmherrschaft der
       <a
         class="underline text-heimv-700 hover:text-heimv-600"
-        href="https://stiftung-pfadiheime.ch/"
-        >Stiftung Pfadiheime Schweiz unterstützt</a
-      >.
+        href="https://stiftung-pfadiheime.ch/">Stiftung Pfadiheime Schweiz</a
+      >. Sie unterstützt die Weiterentwicklung und subventioniert den Betrieb
+      von HeimV für Pfadiheime .
     </p>
     <p class="mb-5">
       HeimV ist für die Eingennutzung von Vereinen open source. (<a
@@ -135,67 +140,109 @@ const articles = await getCollection("articles");
       dürfen.
     </p>
   </section>
+
   <section class="container mx-auto max-w-5xl p-4">
-    <div
-      class="rounded-lg bg-circle p-10 text-xl text-heimv-50 my-[20vh] h-[40vh] flex flex-col justify-center"
-    >
-      <h2 class="mb-8 text-4xl font-heading text-center">
-        Demonstration gefällig?
-      </h2>
-      <p class="text-center">
-        Möchtet ihr HeimV unverbindlich ausprobieren?
+    <h2 class="text-4xl mt-10 mb-5 font-heading" id="articles">Die Preise</h2>
 
-        <a class="underline hover:text-heimv-600" href="mailto:info@heimv.ch"
-          >Demozugang jetzt bei Filou beantragen</a
+    <div class="my-12 grid gap-8 mx-auto lg:grid-cols-3">
+      <div class="rounded-2xl shadow-sm p-7 bg-gray-50 hover:bg-white">
+        <h3 class="text-2xl font-heading text-gray-900">Standard</h3>
+        <p class="mt-4 text-gray-600">Verwaltung von ein bis zwei Mietobjekten.</p>
+        <p class="mt-6 text-4xl font-extrabold text-gray-900">
+          Fr. 30.–<span class="text-lg font-medium">/Monat</span>
+        </p>
+        <ul class="mt-6 space-y-3 text-sm text-gray-700 list-disc ps-4">
+          <li>zzgl. Einrichtungsgebühr Fr. 300.–</li>
+          <li>jedes weitere Mietobjekt Fr. 10.–</li>
+          <li>Sicheres Hosting in der Schweiz</li>
+          <li>Best-Effort E-mail Support</li>
+        </ul>
+        <a
+          class="block text-center mt-8 w-full bg-gray-600 text-white py-2 px-4 rounded-xl"
+          href="mailto:info@heimv.ch"
+          >Los geht's!</a
         >
-      </p>
+      </div>
+
+      <div class="border border-heimv-500 rounded-2xl shadow-lg p-7 bg-heimv-50 hover:bg-white scale-110">
+        <h3 class="text-2xl font-heading text-heimv-900">Pfadiheime</h3>
+        <p class="mt-4 text-gray-600">Verwaltung von ein bis zwei Pfadiheimen.</p>
+        <p class="mt-6 text-4xl font-extrabold text-heimv-900">
+          Fr. 20.–<span class="text-lg font-medium">/Monat</span>
+        </p>
+        <ul class="mt-6 space-y-3 text-sm text-heimv-900 list-disc ps-4">
+          <li>Keine Einrichtungsgebühr</li>
+          <li>Jedes weitere Mietobjekt Fr. 5.–</li>
+          <li>Sicheres Hosting in der Schweiz</li>
+          <li>Best-Effort E-mail Support</li>
+        </ul>
+        <a
+          class="block text-center mt-8 w-full bg-heimv-800 text-white py-2 px-4 rounded-xl"
+          href="mailto:info@heimv.ch"
+          >Los geht's!</a
+        >
+      </div>
+
+      <div class="rounded-2xl shadow-sm p-7 bg-gray-50 hover:bg-white">
+        <h3 class="text-2xl font-heading text-gray-900">Self-hosted</h3>
+        <p class="mt-4 text-gray-600">Verwaltung im Eigengebrauch.</p>
+        <p class="mt-6 text-4xl font-extrabold text-gray-900">
+          Gratis<span class="text-lg font-medium"></span>
+        </p>
+        <ul class="mt-6 space-y-3 text-sm text-gray-700 list-disc ps-4">
+          <li>Volle Kontrolle über Hosting und Daten</li>
+          <li>Pull-Requests und Sponsorings willkommen</li>
+          <li>Best-Effort E-mail Support</li>
+        </ul>
+        <a
+          class="block text-center mt-8 w-full bg-gray-800 text-white py-2 px-4 rounded-xl"
+          href="https://github.com/diegosteiner/heimv">Code auf github</a
+        >
+      </div>
     </div>
+    <p class="mt-5 text-gray-600 text-sm text-center">Alle Preise in CHF. Preise können sich ändern. Es gelten die beim Abschluss gültigen Konditionen.</p>
+    </section>
+
+    <section class="container mx-auto max-w-5xl p-4">
+      <div
+        class="rounded-lg bg-circle p-10 text-xl text-heimv-50 my-[20vh] h-[40vh] flex flex-col justify-center"
+      >
+        <h2 class="mb-8 text-4xl font-heading text-center">
+          Demonstration gefällig?
+        </h2>
+        <p class="text-center">
+          Möchtet ihr HeimV unverbindlich ausprobieren?
+
+          <a class="underline hover:text-heimv-600" href="mailto:info@heimv.ch"
+            >Demozugang jetzt bei Filou beantragen</a
+          >
+        </p>
+      </div>
+    </section>
   </section>
-</Layout>
 
-<style lang="scss">
-  #hero-image {
-    transition: transform 0.1s linear;
-  }
-
-  .bg-circle {
-    background: radial-gradient(
-      107% 107% at 50% -7%,
-      rgba(75, 75, 148, 0) 0%,
-      #59599e 60%
-    );
-  }
-
-  .text-effect-gradient {
-    background: linear-gradient(
-      135deg,
-      var(--color-heimv-200),
-      var(--color-heimv-600)
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
-  body {
-    background-image: url("/background.svg");
-    background-position: top center;
-    background-size: 100vw 95vh;
-    background-repeat: no-repeat;
-  }
-
-  @media (orientation: portrait) {
+  <style lang="scss">
     body {
-      background-size: auto 90vh;
+      background-image: url("/background.svg");
+      background-position: top center;
+      background-size: 100vw 95vh;
+      background-repeat: no-repeat;
     }
-  }
-</style>
 
-<script>
-  const heroImage = document.getElementById("hero-image");
+    @media (orientation: portrait) {
+      body {
+        background-size: auto 90vh;
+      }
+    }
+  </style>
 
-  addEventListener("scroll", (event) => {
-    if (!heroImage) return;
-    const top = -window.scrollY / 2;
-    heroImage.style.transform = `translateY(${top}px)`;
-  });
-</script>
+  <script>
+    const heroImage = document.getElementById("hero-image");
+
+    addEventListener("scroll", (event) => {
+      if (!heroImage) return;
+      const top = -window.scrollY / 2;
+      heroImage.style.transform = `translateY(${top}px)`;
+    });
+  </script>
+</Layout>

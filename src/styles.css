@@ -15,3 +15,19 @@
   --color-heimv-950: #29297a;
   --font-heading: "Patua One", "sans-serif";
 }
+
+
+.bg-circle {
+  background: radial-gradient(107% 107% at 50% -7%,
+      rgba(75, 75, 148, 0) 0%,
+      #59599e 60%);
+}
+
+.text-effect-gradient {
+  background: linear-gradient(135deg,
+      var(--color-heimv-200),
+      var(--color-heimv-600));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

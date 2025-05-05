@@ -32,8 +32,9 @@ const { title, lead, image } = article.data;
   <section class="container py-20 mx-auto">
     <main class="mx-auto max-w-5xl p-4 min-h-screen">
       <h1 class="text-6xl font-heading mb-5 mt-3 break-words">{title}</h1>
-      {lead && <p class="italic mb-5">{lead}</p>}
+      {lead && <p class="italic">{lead}</p>}
       {image && <Image src={image} alt={title} />}
+      <div class="my-24"></div>
       <Markdown>
         <Content />
       </Markdown>
