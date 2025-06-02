@@ -12,16 +12,16 @@
   },
   "dependencies": {
     "@astrojs/tailwind": "^6.0.2",
-    "@tailwindcss/vite": "^4.1.5",
-    "astro": "^5.7.10",
+    "@tailwindcss/vite": "^4.1.8",
+    "astro": "^5.8.1",
     "astro-pagefind": "^1.8.3",
-    "sharp": "^0.34.1",
-    "tailwindcss": "^4.1.5"
+    "sharp": "^0.34.2",
+    "tailwindcss": "^4.1.8"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
     "@tailwindcss/typography": "^0.5.16",
-    "sass": "^1.87.0",
+    "sass": "^1.89.1",
     "typescript": "^5.8.3"
   }
 }

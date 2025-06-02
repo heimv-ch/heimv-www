@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/Article.astro
 title: Buchungsdaten Import
 lead: Buchungsdaten bequem in HeimV übernehmen
 featured: true

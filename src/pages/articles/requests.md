@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/Article.astro
 title: Reservationsanfragen
 lead: Reservationsanfragen einfach und automatisiert verwalten
 image: ../../assets/screen-book-1.png
