@@ -1,0 +1,65 @@
+---
+import { Image } from "astro:assets";
+import { type CollectionEntry, getCollection, render } from "astro:content";
+import Breadcrumbs from "../../components/breadcrumbs.astro";
+import Layout from "../../layouts/Layout.astro";
+import Markdown from "../../layouts/Markdown.astro";
+
+export async function getStaticPaths() {
+  const docs = await getCollection("docs");
+  return docs.map((article) => ({
+    params: { id: article.id },
+    props: { ...article },
+  }));
+}
+type Props = CollectionEntry<"docs">;
+
+const article = Astro.props;
+const { Content } = await render(article);
+const { title, lead, image } = article.data;
+---
+
+<Layout title={title}>
+  <div class="py-6 px-4 container max-w-5xl mx-auto">
+    <Breadcrumbs
+      links={[
+        { title: "Docs", href: "/docs" },
+        { title, href: article.id },
+      ]}
+    />
+  </div>
+  <section class="container py-20 mx-auto">
+    <main class="mx-auto max-w-5xl p-4 min-h-screen">
+      <h1 class="text-6xl font-heading mb-5 mt-3 break-words">{title}</h1>
+      {lead && <p class="italic">{lead}</p>}
+      {image && <Image src={image} alt={title} />}
+      <div class="my-24"></div>
+      <Markdown>
+        <Content />
+      </Markdown>
+    </main>
+  </section>
+</Layout>
+---
+
+<Layout title={title}>
+  <div class="py-6 px-4 container max-w-5xl mx-auto">
+    <Breadcrumbs
+      links={[
+        { title: "Dokumentation", href: "/docs" },
+        { title, href: article.id },
+      ]}
+    />
+  </div>
+  <section class="container py-20 mx-auto">
+    <main class="mx-auto max-w-5xl p-4 min-h-screen">
+      <h1 class="text-6xl font-heading mb-5 mt-3 break-words">{title}</h1>
+      {lead && <p class="italic">{lead}</p>}
+      {image && <Image src={image} alt={title} />}
+      <div class="my-24"></div>
+      <Markdown>
+        <Content />
+      </Markdown>
+    </main>
+  </section>
+</Layout>

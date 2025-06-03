@@ -11,7 +11,7 @@ import Layout from "../layouts/Layout.astro";
 // import screenProcessesImage from "../../assets/screen-processes.png";
 // import screenTenantImage from "../../assets/screen-tenant.png";
 
-const articles = (await getCollection("articles")).filter((article) => article.data.featured);
+const features = (await getCollection("docs")).filter((article) => article.data.featured);
 ---
 
 <Layout title="Features">
@@ -33,10 +33,10 @@ const articles = (await getCollection("articles")).filter((article) => article.d
     </div>
     <ul class="list-disc ps-6">
       {
-        articles.map((feature) => {
+        features.map((feature) => {
           return (
             <li class="pb-8">
-              <a class="block" href={`/articles/${feature.id}`}>
+              <a class="block" href={`/docs/${feature.id}`}>
                 <h3 class="mt-0 mb-1 font-bold underline text-heimv-700 hover:text-heimv-600">
                   {feature.data.title}
                 </h3>
