@@ -39,10 +39,20 @@ Es können leichte Anpassungen am Code vorgenommen werden:
 
 ## Via Link
 
-Natürlich kann HeimV aus der eingenen Webseite verlinkt werden.
+Natürlich kann HeimV aus der eingenen Webseite verlinkt werden:
 
-- **Belegungsplan eines Hauptmietobjektes**: `https://app.heimv.ch/<ORGANISATION>/homes/<HAUPTMIETOBJEKT>/`
-- **Resevationsformular**: `https://app.heimv.ch/<ORGANISATION>/bookings/new`
+- **Belegungsplan eines Hauptmietobjektes**: 
+  
+  ```html
+  <a href="https://app.heimv.ch/<ORGANISATION>/homes/<HAUPTMIETOBJEKT>/">Belegungsplan</a>
+  ```
+
+- **Resevationsformular**: 
+
+  ```html
+  <a href="https://app.heimv.ch/<ORGANISATION>/bookings/new">Reservation</a>
+  ```
+
 
 ## Via eigenes JavaScript 
 

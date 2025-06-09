@@ -91,7 +91,7 @@ const features = (await getCollection("docs")).filter((article) => article.data.
       {
         features.map((feature) => (
             <li class="pb-4">
-              <a class="block" href={`/features/${feature.id}`}>
+              <a class="block" href={`/docs/${feature.id}`}>
                 <h3 class="mt-0 font-bold underline text-heimv-700 hover:text-heimv-600">
                   {feature.data.title}
                 </h3>
