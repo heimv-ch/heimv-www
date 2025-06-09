@@ -27,27 +27,27 @@ Gmail und Google Workspaces unterstützt nur noch das Login-Verfahren `XOAUTH2`,
 - Gehe zu: **APIs & Dienste > Bibliothek**
 - Suche nach «Gmail API»
 - Klicke auf «Aktivieren»
-  ![](/articles/custom_mailserver/enable-gmail-api.png)
+  ![](/docs/custom_mailserver/enable-gmail-api.png)
 
 
 #### 3. OAuth consent screen einrichten
 
 - Gehe zu: **APIs & Dienste > OAuth-Zustimmungsbildschirm**
-  ![](/articles/custom_mailserver/enabled-gmail-api.png)
+  ![](/docs/custom_mailserver/enabled-gmail-api.png)
 - Fülle die erforderlichen Felder aus:
   - App-Name: **HeimV**
   - Support-E-Mail: **info@heimv.ch**
   - Entwickler-E-Mail: **info@heimv.ch**
-  ![](/articles/custom_mailserver/gmail-oauth-consent-1.png)
+  ![](/docs/custom_mailserver/gmail-oauth-consent-1.png)
 
 - Typ: **Intern**
-  ![](/articles/custom_mailserver/gmail-oauth-consent-2.png)
+  ![](/docs/custom_mailserver/gmail-oauth-consent-2.png)
 
 - Scopes hinzufügen:
-  ![](/articles/custom_mailserver/gmail-oauth-add-scope-1.png)
+  ![](/docs/custom_mailserver/gmail-oauth-add-scope-1.png)
 
   - `https://mail.google.com/`
-  ![](/articles/custom_mailserver/gmail-oauth-add-scope-2.png)
+  ![](/docs/custom_mailserver/gmail-oauth-add-scope-2.png)
   
 - Speichern und weiter
 
@@ -55,7 +55,7 @@ Gmail und Google Workspaces unterstützt nur noch das Login-Verfahren `XOAUTH2`,
 
 - Gehe zu: **APIs & Dienste > Anmeldedaten**
 - Klicke auf «Anmeldedaten erstellen > OAuth-Client-ID»
-  ![](/articles/custom_mailserver/gmail-oauth-create-client-1.png)
+  ![](/docs/custom_mailserver/gmail-oauth-create-client-1.png)
 - Anwendungstyp: **Webanwendung**
 - Name: **HeimV**
 - Autorisierte Weiterleitungs-URI hinzufügen:

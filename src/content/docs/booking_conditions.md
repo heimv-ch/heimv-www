@@ -1,5 +1,6 @@
 ---
 title: Bedingungen
+lead: Verhalten von HeimV mit dynamischen Bedingunen den eigenen Bedürfnissen anpassen
 ---
 
 Bedingungen werden an verschiedenen Orten eingesetzt, um den Buchungsprozess zu beeinflussen.

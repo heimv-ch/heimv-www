@@ -1,12 +1,9 @@
 ---
-layout: ../../layouts/Article.astro
 title: Reservationsanfragen
 lead: Reservationsanfragen einfach und automatisiert verwalten
 image: ../../assets/screen-book-1.png
-homepage: true
 featured: true
 ---
-
 
 HeimV ist darauf ausgelegt, dass Reservationsanfragen einfach, übersichtlich und automatisiert verwaltet werden können. Alle Anfragen werden in HeimV gesammelt und können mit wenigen klicks weiterverarbeitet werden. 
 
