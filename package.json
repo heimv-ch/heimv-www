@@ -11,16 +11,16 @@
     "lint": "biome check"
   },
   "dependencies": {
-    "@tailwindcss/vite": "^4.1.8",
-    "astro": "^5.8.2",
+    "@tailwindcss/vite": "^4.1.11",
+    "astro": "^5.12.3",
     "astro-pagefind": "^1.8.3",
-    "sharp": "^0.34.2",
-    "tailwindcss": "^4.1.8"
+    "sharp": "^0.34.3",
+    "tailwindcss": "^4.1.11"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.9.4",
+    "@biomejs/biome": "^2.1.2",
     "@tailwindcss/typography": "^0.5.16",
-    "sass": "^1.89.1",
+    "sass": "^1.89.2",
     "typescript": "^5.8.3"
   }
 }
