@@ -1,0 +1,11 @@
+---
+import Main from "./Main.astro";
+import Markdown from "./Markdown.astro";
+const { frontmatter } = Astro.props;
+---
+
+<Main title={frontmatter.title} breadcrumbs={[{ title: frontmatter.title, href: frontmatter.slug }]} >
+  <Markdown>
+    <slot />
+  </Markdown>
+</Main>

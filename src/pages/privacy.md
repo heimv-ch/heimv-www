@@ -1,5 +1,5 @@
 ---
-layout: ../layouts/Document.astro
+layout: ../layouts/MainDocument.astro
 title: Datenschutzerklärung
 ---
 

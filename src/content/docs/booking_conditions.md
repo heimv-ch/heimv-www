@@ -3,7 +3,7 @@ title: Bedingungen
 lead: Verhalten von HeimV mit dynamischen Bedingunen den eigenen Bedürfnissen anpassen
 ---
 
-Bedingungen werden an verschiedenen Orten eingesetzt, um den Buchungsprozess zu beeinflussen.
+Bedingungen werden an verschiedenen Orten eingesetzt, um den Buchungsprozess zu beeinflussen:
 
 - Tarife auswählbar machen
 - Tarife automatisch auswählen 
@@ -11,6 +11,7 @@ Bedingungen werden an verschiedenen Orten eingesetzt, um den Buchungsprozess zu 
 - Dokumente an Mailvorlagen anhängen
 - Verantwortlichkeiten automatisch zuweisen
 - Zusätzliche Angaben einer Buchung anhängen
+- Zusätzliche Angaben einer Buchung zu einer Pflichteingabe machen
 
 ### Logische Bedingungen
 
