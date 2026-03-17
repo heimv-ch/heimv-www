@@ -6,14 +6,14 @@ featured: true
 
 ## Via `IFRAME`
 
-Der Belegungskalender kann über den `<iframe>` HTML-Tag in die eigene Webseite eingebunden werden.
+Der Belegungskalender kann über den `<iframe>` HTML-Tag in die eigene Webseite eingebunden werden. Um HeimV in einem Kalender zu integrieren, siehe [Integration in Kalender](./ical_feed).
 
 ### Einzelnes Mietobjekt
 
 ```html
 <iframe
   sandbox="allow-same-origin allow-scripts allow-top-navigation-by-user-activation allow-top-navigation"
-  src="https://app.heimv.ch/<ORGANISATION>/occupiables/<MIETOBJEKT>/calendar/embed?display_months=9"
+  src="https://app.heimv.ch/<ORGANISATION>/occupiables/<MIETOBJEKT>/calendar/embed?months=9"
   style="width: 100%; overflow-x: hidden; overflow-y: scroll; height: 960px; border: none;">
   border="0"
 </iframe>
@@ -24,17 +24,22 @@ Der Belegungskalender kann über den `<iframe>` HTML-Tag in die eigene Webseite 
 ```html
 <iframe
   sandbox="allow-same-origin allow-scripts allow-top-navigation-by-user-activation allow-top-navigation"
-  src="https://app.heimv.ch/<ORGANISATION>/homes/<HAUPTMIETOBJEKT>/occupancies/embed?display_months=9"
+  src="https://app.heimv.ch/<ORGANISATION>/homes/<HAUPTMIETOBJEKT>/occupancies/embed?months=9"
   border="0"
   style="width: 100%; overflow-x: hidden; overflow-y: scroll; height: 960px; border: none;">
 </iframe>
 ```
 
+Wobei:
+
+- `<ORGANISATION>` die ID der Organisation in der Verwaltungs-URL ist, z.B. *pfadi-sowieso*.
+- `<HAUPTMIETOBJEKT>` die ID des Hauptmietobjektes ist, siehe unter *Einstellungen/Mietobjekte*
+
 ### Anpassungen
 
 Es können leichte Anpassungen am Code vorgenommen werden: 
 
-- **Anzahl angezeigte Monate anpassen**: Dafür einfach die Anzahl Monate im Query Parameter «display_monthts» des URLs eintragen.
+- **Anzahl angezeigte Monate anpassen**: Dafür einfach die Anzahl Monate im Query Parameter «months» des URLs eintragen.
 - **Style anpassen**: Dafür kann das `style`-Attribut des Tags angepasst werden.
 
 ## Via Link
@@ -53,6 +58,10 @@ Natürlich kann HeimV aus der eingenen Webseite verlinkt werden:
   <a href="https://app.heimv.ch/<ORGANISATION>/bookings/new">Reservation</a>
   ```
 
+Wobei:
+
+- `<ORGANISATION>` die ID der Organisation in der Verwaltungs-URL ist, z.B. *pfadi-sowieso*.
+- `<HAUPTMIETOBJEKT>` die ID des Hauptmietobjektes ist, siehe unter *Einstellungen/Mietobjekte*
 
 ## Via eigenes JavaScript 
 

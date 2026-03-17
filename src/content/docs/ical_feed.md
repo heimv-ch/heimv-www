@@ -1,10 +1,10 @@
 ---
-title: Kalenderintegration
+title: Intergration in Kalender
 lead: Belegungsplan einfach in Outlook, Google Calendar & Co. integrieren
 featured: true
 ---
 
-Der Belegungsplan von HeimV kann einfach in andere Kalender über **ICAL** eingebunden werden.
+Der Belegungsplan von HeimV kann einfach in andere Kalender über **ICAL** eingebunden werden. Um HeimV auf der eigenen Webseite zu integrieren, siehe [Integration auf Webseite](./embed_calendar).
 
 Der ICAL-Feed steht pro Mietobjekt in zwei Varianten zur Verfügung.
 
