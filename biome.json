@@ -1,5 +1,4 @@
 {
-  "$schema": "https://biomejs.dev/schemas/2.3.10/schema.json",
   "files": {
     "ignoreUnknown": false,
     "includes": ["**", "!**/.pnpm-store", "!**/dist", "!**/.astro", "!**/src/env.d.ts"]
