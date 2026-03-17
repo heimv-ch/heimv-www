@@ -2,9 +2,9 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   workflow_dispatch:
-  
+
 permissions:
   contents: read
   pages: write
@@ -15,16 +15,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Build
-        uses: withastro/action@v3
+        uses: withastro/action@v5
         with:
           package-manager: pnpm@9 # The Node package manager that should be used to install dependencies and build your site. Automatically detected based on your lockfile. (optional)
           # path: . # The root location of your Astro project inside the repository. (optional)
-          # node-version: 16 # The specific version of Node that should be used to build your site. Defaults to 16. (optional)
-        
-      - name: Lint 
+          node-version: 24
+
+      - name: Lint
         run: pnpm run lint
 
   deploy:
