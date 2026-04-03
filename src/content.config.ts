@@ -15,13 +15,4 @@ const docs = defineCollection({
     }),
 });
 
-const releases = defineCollection({
-  loader: glob({ pattern: "**/[^_]*.{md,mdx}", base: "./src/content/releases" }),
-  schema: () =>
-    z.object({
-      version: z.string(),
-      released_at: z.date().optional(),
-    }),
-});
-
-export const collections = { docs, releases };
+export const collections = { docs };
