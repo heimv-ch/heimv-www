@@ -20,7 +20,7 @@ const { transparent = false } = Astro.props;
 >
   <nav
     class:list={[
-      "container mx-auto max-w-5xl flex justify-between items-center font-heading",
+      "container mx-auto max-w-5xl flex justify-between items-center",
       { "text-heimv-50": !transparent, "text-gray-700": transparent },
     ]}
   >
@@ -46,21 +46,20 @@ const { transparent = false } = Astro.props;
         <a
           class="p-3 grow-0 whitespace-nowrap hover:text-heimv-50 no-underline"
           ,
-          href="/features">
-          
-           <span class="sm:hidden">Features</span>
-           <span class="sm:inline hidden">💡 Features</span>
-          </a
+          href="/features"
         >
+          <span class="sm:hidden">Features</span>
+          <span class="sm:inline hidden">💡 Features</span>
+        </a>
       </li>
       <li>
         <a
           class="p-3 grow-0 whitespace-nowrap hover:text-heimv-50 no-underline"
-          href="/docs">
-           <span class="sm:hidden">Docs</span>
-           <span class="sm:inline hidden">Docs</span>
-          </a
+          href="/docs"
         >
+          <span class="sm:hidden">Docs</span>
+          <span class="sm:inline hidden">Dokumentation</span>
+        </a>
       </li>
       <li>
         <a

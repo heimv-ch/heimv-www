@@ -11,7 +11,9 @@ import Layout from "../layouts/Layout.astro";
 // import screenProcessesImage from "../../assets/screen-processes.png";
 // import screenTenantImage from "../../assets/screen-tenant.png";
 
-const features = (await getCollection("docs")).filter((article) => article.data.featured);
+const features = (await getCollection("docs")).filter(
+  (article) => article.data.featured,
+);
 ---
 
 <Layout title="Features">
@@ -23,7 +25,7 @@ const features = (await getCollection("docs")).filter((article) => article.data.
       <h1
         class="font-heading text-[clamp(4vw,0.5rem+5vw,3rem)] leading-snug font-bold row-start-1 row-end-1 col-start-1 col-end-1 z-10"
       >
-        Feature Spotlight
+        Features
       </h1>
 
       <span
