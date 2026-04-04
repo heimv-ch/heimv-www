@@ -11,9 +11,7 @@ import Layout from "../layouts/Layout.astro";
 // import screenProcessesImage from "../../assets/screen-processes.png";
 // import screenTenantImage from "../../assets/screen-tenant.png";
 
-const features = (await getCollection("docs")).filter(
-  (article) => article.data.featured,
-);
+const features = (await getCollection("docs")).filter((article) => article.data.featured);
 ---
 
 <Layout title="Features">
