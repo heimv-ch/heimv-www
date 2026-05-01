@@ -1,0 +1,23 @@
+---
+import { getCollection } from "astro:content";
+import Breadcrumbs from "../components/breadcrumbs.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Einführungsvideo 2019">
+  <div class="py-6 px-4 container max-w-5xl mx-auto">
+    <Breadcrumbs links={[{ title: "Einführungsvideo 2019", href: "/introduction-video-2019" }]} />
+  </div>
+  <main class="container mx-auto max-w-5xl p-4 min-h-screen">
+    <h1 class="text-6xl font-heading mb-5 mt-3 wrap-break-word">Einführungsvideo 2019</h1>
+    <p class="mb-5">Einführungsvideo vom 1. Release 2019. Das Grundprinzip ist aber noch das gleiche.</p>
+    <iframe 
+      src="https://www.youtube.com/embed/g7poJZgLOu0?si=D-5A0YKJG1EdiEHI" 
+      width="100%" 
+      height="700" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      referrerpolicy="strict-origin-when-cross-origin" 
+      allowfullscreen></iframe>
+  </main>
+</Layout>
