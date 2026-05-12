@@ -18,8 +18,8 @@ Die *Anzuzeigende Fehlermeldung* fehlermeldung wird angezeigt, wenn die Gültigk
 
 ### Einsatzbeispiele
 
-- Maximale Personenanzahl beschränken: mit Buchungsattribut «Erwartete Anzahl Personen»
-- Auf einzelnen Mietobjekten nur gewisse Mietkategorien zulassen: mit Mietobjejt und Mietkategorie
-- Zu kurze oder zu lange Mieten verbieten: mit Mietdauer
+- Maximale Personenanzahl beschränken: mit *Buchungsattribut «Erwartete Anzahl Personen»*
+- Auf einzelnen Mietobjekten nur gewisse Mietkategorien zulassen: mit *Mietobjekt und Mietkategorie*
+- Zu kurze oder zu lange Mieten verbieten: mit *Mietdauer*
 
 
