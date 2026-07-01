@@ -7,7 +7,8 @@ lead: Damit nach der Einrichtung nichts vergessen geht
 1. ▢ [Mietkategorien hinzufügen](#mietkategorien-hinzufügen)
 1. ▢ [Tarife hinzufügen](#tarife-hinzufügen)
 1. ▢ [Zusätzliche Angaben hinzufügen](#zusätzliche-angaben-hinzufügen)
-1. ▢ [allenfalls Funktionäre und Verantwortlichkeiten hinzufügen](#funktionäre-und-verantwortlichkeiten-hinzufügen)
+1. ▢ [Funktionäre und Verantwortlichkeiten hinzufügen](#funktionäre-und-verantwortlichkeiten-hinzufügen)
+1. ▢ [Dokumente hochladen](#dokumente-hochladen)
 1. ▢ [Vertrags-, Rechnungs-, und Mailvorlagen anpassen](#vertrags--rechnungs--und-mailvorlagen-anpassen)
 1. ▢ [Individuelle Gültigkeitsprüfungen einrichten](#individuelle-gültigkeitsprüfungen-einrichten)
 1. ▢ [Bestehenden Buchungen importieren](#bestehenden-buchungen-importieren)
@@ -61,11 +62,24 @@ Typische Rollen Verantwortlichkeiten z.B.:
 - Hausrücknahme
 - Verrechnung
 
+#### Dokumente hochladen
+
+Dokumente, die dem Mieter zur Verfügung gestellt werden sollen, können unter _Einstellungen / Dokumente_ hochgeladen werden.
+
+Häufige Dokumente sind z.B.:
+
+- Allgemeine Vertragsbedingungen der Organisation
+- Hausordnung / Benutzungsordnung
+- Anfahrtsbeschreibung / Parkordnung
+- Datenschutzerklärung der Organisation
+
 > Siehe [Funktionäre und Verantwortlichkeiten](./operators)
 
 #### Vertrags-, Rechnungs-, und Mailvorlagen anpassen
 
-Alle E-Mails, Verträge und Rechnungen, die HeimV erstellt und verschickt sind unter _Einstellungen / Textvorlagen_ anpassbar. Unbenötigte Textvorlagen können ausgeschaltet werden. Alle verbleibenden Textvorlagen müssen durch die Verwaltung überprüft und ggf. angepasst werden
+Alle E-Mails, Verträge und Rechnungen, die HeimV erstellt und verschickt sind unter _Einstellungen / Textvorlagen_ anpassbar. Ebenfalls kann hier definiert werden, welche hochgeladenen Dokumente welchen E-Mails angehängt werden sollen.
+
+Unbenötigte Textvorlagen können ausgeschaltet werden. Alle verbleibenden Textvorlagen müssen durch die Verwaltung überprüft und ggf. angepasst werden.
 
 > Siehe [Textvorlagen](./rich_text_templates).
 

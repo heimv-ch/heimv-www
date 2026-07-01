@@ -1,6 +1,6 @@
 ---
 import { getCollection } from "astro:content";
-import Search from "astro-pagefind/components/Search";
+import PagefindConfig from "astro-pagefind/components/PagefindConfig.astro";
 import Breadcrumbs from "../../components/breadcrumbs.astro";
 import Layout from "../../layouts/Layout.astro";
 
@@ -24,8 +24,12 @@ const docs = await getCollection("docs");
         >📚</span
       >
     </div>
-    <Search id="search" className="py-10" uiOptions={{ showImages: false }} />
-    <ul class="list-disc ps-6">
+    <!-- <Search id="search" className="py-10 mb-10 w-full" uiOptions={{ showImages: false }} /> -->
+
+      <PagefindConfig instance="search" lang="de" preload={true} />
+      <pagefind-searchbox instance="search" class="search"></pagefind-searchbox>
+
+    <ul class="list-disc ps-6 mt-10">
       {
         docs.map((article) => {
           return (
