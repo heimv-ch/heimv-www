@@ -35,7 +35,7 @@ Mieter haben bei einer Reservationsanfrage jeweils die Möglichkeit, die Mietkat
 
 Die Grundlage für die Rechungsstellung in HeimV bilden die «Tarife». Jeder mögliche Tarif muss unter _Einstellungen / Tarife_ erfasst werden.
 
-Die Tarife werden als flache Struktur abgebildet. Das bedeutet, das für jede einzelne Variante ein eigener Tarif erfasst werden muss. 
+Die Tarife werden als flache Struktur abgebildet. Das bedeutet, das für jede einzelne Variante ein eigener Tarif erfasst werden muss.
 
 > Siehe [Tarife](./tarifs)
 
@@ -43,7 +43,7 @@ Die Tarife werden als flache Struktur abgebildet. Das bedeutet, das für jede ei
 
 HeimV bietet die Möglichkeit «zusätzliche Angaben» vom oder zu dem Mietenden abzufragen oder speichern. Dazu können Felder unter _Einstellungen / Zusätzliche Angaben_ erstellt werden.
 
-Typische zusätzliche Angaben sind z.B.: 
+Typische zusätzliche Angaben sind z.B.:
 
 - IBAN für mögliche Rückzahlung
 - Reinigung durch Vermietung gewünscht
@@ -62,6 +62,8 @@ Typische Rollen Verantwortlichkeiten z.B.:
 - Hausrücknahme
 - Verrechnung
 
+> Siehe [Funktionäre und Verantwortlichkeiten](./operators)
+
 #### Dokumente hochladen
 
 Dokumente, die dem Mieter zur Verfügung gestellt werden sollen, können unter _Einstellungen / Dokumente_ hochgeladen werden.
@@ -73,8 +75,6 @@ Häufige Dokumente sind z.B.:
 - Anfahrtsbeschreibung / Parkordnung
 - Datenschutzerklärung der Organisation
 
-> Siehe [Funktionäre und Verantwortlichkeiten](./operators)
-
 #### Vertrags-, Rechnungs-, und Mailvorlagen anpassen
 
 Alle E-Mails, Verträge und Rechnungen, die HeimV erstellt und verschickt sind unter _Einstellungen / Textvorlagen_ anpassbar. Ebenfalls kann hier definiert werden, welche hochgeladenen Dokumente welchen E-Mails angehängt werden sollen.
@@ -85,7 +85,7 @@ Unbenötigte Textvorlagen können ausgeschaltet werden. Alle verbleibenden Textv
 
 #### Individuelle Gültigkeitsprüfungen einrichten
 
-Reservationsanfragen können vor der Erstellung durch die Mieter noch mit verschiedenen [Bedingungen](./booking_conditions) überprüft werden, um den Buchungsprozess den Anforderungen anzupassen. 
+Reservationsanfragen können vor der Erstellung durch die Mieter noch mit verschiedenen [Bedingungen](./booking_conditions) überprüft werden, um den Buchungsprozess den Anforderungen anzupassen.
 
 Häufige Gültigkeitsprüfungen sind z.B.:
 
@@ -93,7 +93,6 @@ Häufige Gültigkeitsprüfungen sind z.B.:
 - **Reservationsfenster**: _z.B. Kategorie «Fest» kann frühestens 2 Monate im Voraus gebucht werden_
 
 > Siehe dazu [Gültigkeitsprüfungen](./booking_validations).
-
 
 #### Bestehenden Buchungen importieren
 
